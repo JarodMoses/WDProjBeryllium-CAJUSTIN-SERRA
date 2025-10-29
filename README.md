@@ -54,7 +54,7 @@ ABOUT US PAGE:
 * Why we made this website
 
 
-Link to Wireframe: [Wireframe](CAJUSTIN&&SERRA_WIRE FRAME.pdf)
+Link to Wireframe: [Wireframe]((https://github.com/BenedictSerra/WDProjBeryllium-CAJUSTIN-SERRA/blob/patch-1/CAJUSTIN%26%26SERRA_WIRE%20FRAME.pdf))
 
 
 
