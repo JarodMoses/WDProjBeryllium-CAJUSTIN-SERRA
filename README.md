@@ -7,3 +7,4 @@ Logo:
 File: https://yt3.googleusercontent.com/8L9pN77f9KJsAn1Yop0R1eocQonxfpvprP5ROsAgvzAehxEnPK0UuEAdI6pIaht1h1carg5E9Q=s900-c-k-c0x00ffffff-no-rj
 
 ### Description
+This website holds everything you need to know about the Valorant team Paper Rex (PRX).  We aim to include all players that have played for PRX, the organization history, and the teams merchandise and bundle info.
