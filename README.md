@@ -14,4 +14,7 @@ PLAYERS PAGE:
 * Contains the PRX roster throughout the VCT years
 
 ORGANIZATION HISTORY
-* 
+* idk
+
+MERCHANDISE AND BUNDLE INFO
+* Holds 
