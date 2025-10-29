@@ -11,5 +11,7 @@ This website holds everything you need to know about the Valorant team Paper Rex
 
 ### Outline of the Website
 PLAYERS PAGE: 
+* Contains the PRX roster throughout the VCT years
 
-* Contains the PRX roster throughout the VCT years 2021-2025
+ORGANIZATION HISTORY
+* 
