@@ -23,16 +23,15 @@ Content Creators:
 Contains all current content creators for PRX valorant and their socials which include their streaming platform (YT, TWITCH, ETC.), their content platform (YT), and their Instagram.
 
 PARTNERS
-* Contains all the partners of the PRX org and upon clicking them leads to their respective website
+* Contains all the partners of the PRX org and upon clicking them leads to their respective website.
 
 MERCHANDISE AND BUNDLE INFO
 * Contains prx merch, the avaialability of said merchandise, and it's prices.
 * Upon clicking add to cart, it leads you to the actual PRX merch shop.
 
 
-
-
 About Us
-* Introd
+* Introduces the creators of the website
+* Brief explanation on why we made this website
 
   
