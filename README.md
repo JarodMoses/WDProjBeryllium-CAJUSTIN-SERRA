@@ -54,7 +54,7 @@ ABOUT US PAGE:
 * Why we made this website
 
 
-Link to Wireframe: [Wireframe](CAJUSTIN&SERRA_WIREFRAME.pdf)
+Link to Wireframe: [Wireframe](CAJUSTIN&&SERRA_WIRE FRAME.pdf)
 
 
 
