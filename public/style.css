@@ -1,0 +1,30 @@
+
+.navbar {
+    width: 100%;
+    display: flex;
+    background-color: #2f052b;s
+    justify-content: center;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+    padding: 5px;
+  }
+  
+  .navbar ul li a {
+    color: rgba(167, 130, 63);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "myFont";
+  }
+  
+  .navbar a:hover{
+    background-color: rgba(0, 213, 255, 0.156);
+  }
