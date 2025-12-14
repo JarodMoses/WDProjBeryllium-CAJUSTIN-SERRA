@@ -1,0 +1,238 @@
+/* NAVBAR STUFF */
+
+body {
+    margin: 0;
+}
+
+
+.navbar {
+    font-size: 15px;
+    gap: 11.63vw;
+    display: flex;
+    list-style-type: none;
+    padding-inline: 25px;
+    align-items: center;
+    background-color: #2f052b;
+    padding-bottom: 5px;
+    padding-top: 5px; 
+}
+
+.navbar li {
+    position: relative;
+}
+
+
+
+a:link {
+   text-decoration: none;
+    color: white;
+    font-family: MyFont;
+    font-size: 15px;
+    display: inline-block;        
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* So dropdown links dont get targeted */
+
+.navbar > li > a:hover {
+    transform: scale(1.2); 
+    color: red; 
+    transition-duration: .5s;
+    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
+}
+
+
+
+@font-face {
+    font-family: MyFont;
+    src: url(Valorant\ Font.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: MyFont;
+
+}
+
+
+
+.prxpic {
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 100%);
+}
+
+
+
+h1 {
+    font-family: myFont;
+    color: #67055d;
+    text-align: center;
+    padding: 0;
+    
+}
+
+.homeintro p {
+    font-family: cursive;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    padding-bottom: 30px;
+    width: 80%;
+}
+
+
+footer {
+    background-color: #2f052b;
+    
+    color: white;
+    font-size: 11px;
+    font-family: MyFont;
+    padding-top: 20px;
+}
+
+.matches-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 50%;         
+    transform: translateX(-50%); 
+    background-color: #2f052b;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    padding-top: 10px;
+
+}
+
+.matches-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-family: MyFont;
+    text-align: center;
+
+}
+
+.matches-dropdown a:hover {
+    color: red;
+    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
+}
+
+.matches:hover .matches-dropdown {
+    display: block; 
+    
+}
+
+.matches:hover > a {
+    color: red;
+    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
+
+}
+
+
+.players-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 50%;         
+    transform: translateX(-50%); 
+    background-color: #2f052b;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    padding-top: 10px;
+
+}
+
+.players-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-family: MyFont;
+    text-align: center;
+
+}
+
+.players-dropdown a:hover {
+    color: red;
+    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
+}
+
+.players:hover .players-dropdown {
+    display: block; 
+    
+}
+
+.players:hover > a {
+    color: red;
+    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
+
+}
+
+
+/* Images of Players */
+
+.PlayerPictures {
+    
+    display: flex;
+    justify-content: center;
+    padding-left: 4px;
+    gap: 200px;                 
+    flex-wrap: wrap; 
+    margin-bottom: 50px;
+}
+
+.PlayerPictures2 {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding-left: 4px;
+}
+
+.Player-Pictures {
+    border: solid #555;
+    border-radius: 10px;
+}
+
+.Player-Pictures:hover {
+   transform: scale(1.2); 
+   transition-duration: .5s; 
+}
+
+/* Text at the bottom & quiz button */
+
+.PlayerIntro {
+    padding-top: 30px;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+
+    
+}
+
+.PlayerIntro a {
+    color: white;
+    background-color: #2f052b;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+
+.PlayerIntro a:hover {
+    transform: scale(1.15);
+    color: red;
+    transition-duration: 0.5s;
+    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6); 
+}
