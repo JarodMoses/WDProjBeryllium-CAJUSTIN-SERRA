@@ -52,7 +52,7 @@
 
                   
 
-                    <div class="quizintro">
+                    <div class="quizintro" id="intro">
                         <h1>Paper Rex Quiz: Which Rex are you? </h1> <br>
                         
                         <p>
@@ -61,34 +61,153 @@
                         </p>
                     </div>
 
-                    <div class="Question1">
-                        <h1> 1. How do you play? </h1>
+                    
                         
+                        
+                        
+                    <div class="Answers" id="Answers">
+                        <h1> 1. What role do you usually play? </h1>
+                    
                         <div class="Answers1">
-                            <button onclick="Question1(1, 'Jing', this)"> Super Agressive </button>
-                            <button onclick="Question1(1, 'Forsaken', this)"> Leader of strategies </button>
-                            <button onclick="Question1(1, 'Patmen', this)"> Controlling the map </button>
-                            <button onclick="Question1(1, 'Davai', this)"> Providing cover for my team </button>
-                            <button onclick="Question1(1, 'Something', this)"> Option 1 </button> 
-                            <p id="score">Score: 0</p>
+                            <button onclick="Question(0, 'Jing', this)" class="button"> Duelist – I want to take fights first </button>
+                            <button onclick="Question(0, 'Forsaken', this)" class="button"> Flex – I play whatever the team needs </button>
+                            <button onclick="Question(0, 'Something', this)" class="button"> Duelist – aggressive but calculated </button>
+                            <button onclick="Question(0, 'Davai', this)" class="button"> Controller – I support with utility </button>
+                            <button onclick="Question(0, 'Patmen', this)" class="button"> Initiator – I help the team get info </button> 
                         </div>
+
+
 
 
                         <div class="Answers2">
-                            <button onclick="Question2(2, 'Jing', this)" class = "button"> Super Agressive </button>
-                            <button onclick="Question2(2, 'Forsaken', this )" class = "button"> Leader of strategies </button>
-                            <button onclick="Question2(2, 'Patmen', this)" class = "button"> Controlling the map </button>
-                            <button onclick="Question2(2, 'Davai', this)" class = "button"> Providing cover for my team </button>
-                            <button onclick="Question2(2, 'Something', this)" class = "button"> Option 1 </button>
+                            <h1> 2. Your team is hitting a site. What do you do?</h1>
+                            <button onclick="Question(1, 'Jing', this)" class = "button"> Dash in immediately and cause chaos </button>
+                            <button onclick="Question(1, 'Davai', this )" class = "button">  Set up smokes perfectly before committing </button>
+                            <button onclick="Question(1, 'Patmen', this)" class = "button"> Scan, flash, or drone to gather info </button>
+                            <button onclick="Question(1, 'Forsaken', this)" class = "button">  Look for a smart timing or flank </button>
+                            <button onclick="Question(1, 'Something', this)" class = "button"> Entry but with utility and spacing </button>
                         </div>
 
-                        <div class="Answers2">
-                            <button onclick="Question3(3, 'Jing', this)" class = "button"> Super Agressive </button>
-                            <button onclick="Question3(3, 'Forsaken', this)" class = "button"> Leader of strategies </button>
-                            <button onclick="Question3(3, 'Patmen', this)" class = "button"> Controlling the map </button>
-                            <button onclick="Question3(3, 'Davai', this)" class = "button"> Providing cover for my team </button>
-                            <button onclick="Question3(3, 'Something', this)" class = "button"> Option 1 </button>
+                        <div class="Answers3">
+                            <h1> 3. How would teammates describe your playstyle? </h1>
+                            <button onclick="Question(2, 'Jing', this)" class = "button"> Fearless and explosive </button>
+                            <button onclick="Question(2, 'Forsaken', this)" class = "button"> Confident and consistent  </button>
+                            <button onclick="Question(2, 'Patmen', this)" class = "button"> Tactical and supportive </button>
+                            <button onclick="Question(2, 'Davai', this)" class = "button"> Calm, reliable, and disciplined </button>
+                            <button onclick="Question(2, 'Something', this)" class = "button">   Unpredictable and creative</button>
                         </div>
+
+
+                        <div class="Answers4">
+                            <h1> 4. You’re in a clutch situation (1v2). What’s your mindset? </h1>
+                            <button onclick="Question(3, 'Jing', this)" class = "button"> Take both fights head-on </button>
+                            <button onclick="Question(3, 'Forsaken', this)" class = "button"> Outsmart them with movement or positioning </button>
+                            <button onclick="Question(3, 'Patmen', this)" class = "button"> Use info and utility to isolate enemies  </button>
+                            <button onclick="Question(3, 'Davai', this)" class = "button"> Play time and utility patiently </button>
+                            <button onclick="Question(3, 'Something', this)" class = "button"> Play time and utility patiently </button>
+                        </div>
+                    
+
+                        <div class="Answers5">
+                            <h1> 5. What’s your biggest strength in Valorant? </h1>
+                            <button onclick="Question(4, 'Jing', this)" class = "button"> Raw aim and confidence </button>
+                            <button onclick="Question(4, 'Forsaken', this)" class = "button"> Adaptability </button>
+                            <button onclick="Question(4, 'Patmen', this)" class = "button">  Team coordination and setup </button>
+                            <button onclick="Question(4, 'Davai', this)" class = "button"> Game sense and utility usage </button>
+                            <button onclick="Question(4, 'Something', this)" class = "button"> Decision-making under pressure </button>
+                        </div>
+
+
+                        <div class="Answers6">
+                            <h1> 6. If your plan fails mid-round, what do you do? </h1>
+                            <button onclick="Question(5, 'Jing', this)" class = "button"> Double down and push harder </button>
+                            <button onclick="Question(5, 'Forsaken', this)" class = "button"> Stay composed and adjust calmly </button>
+                            <button onclick="Question(5, 'Patmen', this)" class = "button">  Regather info before acting </button>
+                            <button onclick="Question(5, 'Davai', this)" class = "button"> Fall back and reset with the team </button>
+                            <button onclick="Question(5, 'Something', this)" class = "button"> Instantly switch plans </button>
+                        </div>
+
+                        <div class="Answers7">
+                            <h1> 7. Which situation excites you the most? </h1>
+                            <button onclick="Question(6, 'Jing', this)" class = "button"> Opening duel at the start of the round </button>
+                            <button onclick="Question(6, 'Forsaken', this)" class = "button"> Clean retake execution </button>
+                            <button onclick="Question(6, 'Patmen', this)" class = "button">  Coordinated site execute </button>
+                            <button onclick="Question(6, 'Davai', this)" class = "button"> Perfect post-plant setup  </button>
+                            <button onclick="Question(6, 'Something', this)" class = "button"> Mid-round chaos </button>
+                        </div>
+                    
+                        <div class="Answers8">
+                            <h1> 8. What kind of mistakes do you forgive most (in yourself)? </h1>
+                            <button onclick="Question(7, 'Jing', this)" class = "button">  Over-aggression </button>
+                            <button onclick="Question(7, 'Forsaken', this)" class = "button"> Trying something risky </button>
+                            <button onclick="Question(7, 'Patmen', this)" class = "button">  Overthinking a play </button>
+                            <button onclick="Question(7, 'Davai', this)" class = "button">  Playing too safe  </button>
+                            <button onclick="Question(7, 'Something', this)" class = "button"> Missing a shot </button>                          
+                        </div>
+
+                        <div class="Answers9">
+                            <h1> 9. How do you handle pressure in important matches? </h1>
+                            <button onclick="Question(8, 'Jing', this)" class = "button">  I play even more aggressively </button>
+                            <button onclick="Question(8, 'Forsaken', this)" class = "button"> I focus and simplify my game </button>
+                            <button onclick="Question(8, 'Patmen', this)" class = "button">  I rely on teamwork </button>
+                            <button onclick="Question(8, 'Davai', this)" class = "button">  I slow things down  </button>
+                            <button onclick="Question(8, 'Something', this)" class = "button"> I trust my instincts </button>
+                        </div>
+
+
+                        <div class="Answers10">
+                            <h1> 10. What matters more to you? </h1>
+                            <button onclick="Question(9, 'Jing', this)" class = "button">  Impact frags </button>
+                            <button onclick="Question(9, 'Forsaken', this)" class = "button"> Creativity </button>
+                            <button onclick="Question(9, 'Patmen', this)" class = "button">  Consistency </button>
+                            <button onclick="Question(9, 'Davai', this)" class = "button">  Structure  </button>
+                            <button onclick="Question(9, 'Something', this)" class = "button"> Team success </button>
+                            <div class="yes" id="score">
+
+                            </div>
+                        </div>
+
+                        <div class="Submit" id="Submit">
+                            <button onclick="Submit()" class = "submit">  Submit </button>
+                                
+                        </div>
+
+                        
+                        
+                       
+                    
+                    </div>
+
+                    <div class="JingBox" id="JingBox">
+                        <h1> Your Player is.... Jing!</h1>
+                        
+                        <div class="Jing" id="Jing">
+                            <div class="JingImage">
+                                <a href=Jing.html><img src="../assets/Jing2.jpg"></a>
+                            </div>
+                            
+                            <div class="JingText">
+                                You're bold, fearless, and kill hungry. <br>
+                                Like Jing, you dive into challenges headfirst, and arent afraid to make big plays
+                                that can turn the tide of the game. You thrive in high pressure situations, trusting your aim to win
+                                all the duels you take. In times of clutch, people look to you for action, and with your raw aim,
+                                you can single handedly save the game.
+                            </div>
+                            
+                        </div>
+                    </div>
+                        
+                    
+                    <div class="ThankYouText" id="ThankYouText">
+                        Now that you've got your player, learn about other players! Click on the image of your player to learn more about him, and click on the first button below
+                        to retake the quiz, and click on the second button go to the rosters page!
+                    </div>
+                    
+                    
+
+                    <div class="RetakeRosters" id="RetakeRosters">
+                        <a href="Quiz.html"> Retake </a>
+                        <a href="Roster.html"> Roster </a>
                     </div>
 
                         
