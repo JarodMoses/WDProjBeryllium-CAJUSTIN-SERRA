@@ -182,9 +182,37 @@ a {
 footer {
     background-color: #2f052b;
     color: white;
-    font-size: 11px;
     font-family: MyFont;
-    padding-top: 20px;
+    display: flex;
+
+}
+
+.footerBody {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #2f052b;
+    height: 60px;
+
+}
+
+.copyright {
+    width: 33%;
+    text-align: left;
+
+}
+
+.sources {
+    width: 33%;
+    text-align: center;
+}
+
+
+.contactinfo {
+    width: 33%;
+    text-align: right;
+    
 }
 
 

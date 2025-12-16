@@ -162,7 +162,7 @@ a {
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
-
+    
     
 }
 
@@ -171,10 +171,12 @@ a {
     background-color: #2f052b;
     width: 100px;
     padding-top: 10px;
+    margin-right: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
 
 }
+
 
 
 .PlayerIntro a:hover {
@@ -186,7 +188,7 @@ a {
 }
 
 
-/* Forsaken Stuff */
+/*  Something Stuff */
 
 .SomethingBox {
     display: flex;
@@ -242,7 +244,34 @@ p {
 footer {
     background-color: #2f052b;
     color: white;
-    font-size: 11px;
     font-family: MyFont;
-    padding-top: 20px;
+}
+
+
+.footerBody {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #2f052b;
+    height: 60px;
+
+}
+
+.copyright {
+    width: 33%;
+    text-align: left;
+
+}
+
+.sources {
+    width: 33%;
+    text-align: center;
+}
+
+
+.contactinfo {
+    width: 33%;
+    text-align: right;
+    
 }

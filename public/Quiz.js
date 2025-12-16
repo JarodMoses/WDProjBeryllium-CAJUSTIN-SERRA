@@ -9,9 +9,9 @@
 
 
 
-    let player = '';
+    let player = ''; /* Initialize player */
 
-    let Questions = Array(11).fill(null);
+    let Questions = Array(11).fill(null); /* Make an array of length 11 with nulls */
 
 
 
@@ -82,11 +82,11 @@
 
             
         
-        if (JingTotal == Winner)
-            var e = document.getElementById("Jing")
+        if (JingTotal == Winner)    /* If jing is highest */
+        {
+            var e = document.getElementById("Jing") /*Unhide the hidden blocks */
             
             {
-                e.style.visibility = "visible";
                 e.style.display = "flex";
             }
 
@@ -94,11 +94,57 @@
             {
                 f.style.display = "block";
             }
+        }
+
+        
+        if (ForsakenTotal == Winner) /*if forsaken is highest */
+        {
+            var e = document.getElementById("Forsaken")/*Unhide the hidden blocks */
+            {
+                e.style.display = "flex";
+            }
+
+            var f = document.getElementById("ForsakenBox")
+            f.style.display = "block";
+        }
+
+
+        if (SomethingTotal == Winner)
+        {
+            var e = document.getElementById("Something")/*Unhide the hidden blocks */
+            {
+                e.style.display = "flex"
+            }
+
+            var f = document.getElementById("SomethingBox")
+                f.style.display = "block";
+            
+        }
+
+        if (PatmenTotal == Winner)
+        {
+            var e = document.getElementById("Patmen")/*Unhide the hidden blocks */
+                e.style.display = "flex";
+
+            var f = document.getElementById("PatmenBox")
+                f.style.display = "block";
+            
+        }
+        
+        if (DavaiTotal == Winner)
+        {
+            var e = document.getElementById("Davai")/*Unhide the hidden blocks */
+                e.style.display = "flex";
+
+            var f = document.getElementById("DavaiBox")
+                f.style.display = "block";
+            
+        }
     }
 
     else 
     {
-        var g = document.getElementById("Retry")
+        var g = document.getElementById("Retry") /* if answers != 11 */
             g.style.display = "inline";
     }
 

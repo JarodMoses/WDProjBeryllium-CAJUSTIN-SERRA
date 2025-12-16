@@ -73,13 +73,6 @@ a {
 
 
 
-footer {
-    background-color: #2f052b;
-    color: white;
-    font-size: 11px;
-    font-family: MyFont;
-    padding-top: 20px;
-}
 
 .matches-dropdown {
     display: none;
@@ -181,6 +174,7 @@ footer {
     color: white;
     background-color: #2f052b;
     width: 100px;
+    margin-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
@@ -245,4 +239,41 @@ p {
 .caption1 {
     width: 57vw;    
     margin: auto;
+}
+
+
+footer {
+    background-color: #2f052b;
+    color: white;
+    font-family: MyFont;
+}
+
+
+
+.footerBody {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #2f052b;
+    height: 60px;
+
+}
+
+.copyright {
+    width: 33%;
+    text-align: left;
+
+}
+
+.sources {
+    width: 33%;
+    text-align: center;
+}
+
+
+.contactinfo {
+    width: 33%;
+    text-align: right;
+    
 }

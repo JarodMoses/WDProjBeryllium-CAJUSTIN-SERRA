@@ -1,10 +1,11 @@
-/* NAVBAR STUFF */
+/* INDEX STYLING */
 
 body {
     margin: 0;
 }
 
 
+/* Navbar styling */
 .navbar {
     font-size: 15px;
     gap: 11.63vw;
@@ -15,7 +16,6 @@ body {
     background-color: #2f052b;
     padding-bottom: 5px;
     padding-top: 5px; 
-    margin-bottom: 4%;
 }
 
 .navbar li {
@@ -44,7 +44,7 @@ a:link {
 
 
 
-@font-face {
+@font-face { /* Font */
     font-family: MyFont;
     src: url(Valorant\ Font.ttf);
     font-weight: normal;
@@ -60,14 +60,7 @@ a {
 
 }
 
-
-
-
-
-
-
-
-
+/* Dropdowns */
 
 .matches-dropdown {
     display: none;
@@ -147,104 +140,51 @@ a {
 }
 
 
-/* End of Navbar Styling */
+
+/* Body image */
+
+.prxpic {
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 100%);
+}
 
 
-/* For the quiz & info */
 
 
-.PlayerIntro {
-    padding-top: 30px;
-    font-family: cursive;
-    font-size: 20px;
+/* Text @ bottom */
+
+.homeintro h1 {
+    font-family: myFont;
+    color: #67055d;
     text-align: center;
+    padding: 0;
+    margin-bottom: -15px;
+    
+}
+
+
+
+.homeintro p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    padding-bottom: 30px;
     width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-
-    
 }
 
-.PlayerIntro a {
-    color: white;
-    background-color: #2f052b;
-    width: 100px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-
-}
-
-
-.PlayerIntro a:hover {
-    transform: scale(1.15);
-    color: red;
-    transition-duration: 0.5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6);
-    
-}
-
-
-/* Forsaken Stuff */
-
-.ForsakenBox {
-    display: flex;
-    width: 55vw;
-    margin-left: 10%;
-    height: 50vh;
-    margin: auto;
-    background-color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color:#5b0452;
-    background-color: rgba(219, 215, 215, 0.37);
-    gap: 10px;
-    font-weight: bold;
-
-    
-}
-
-
-
-p {
-    margin: 0;
-}
-
-.ForsakenText {
-    font-size: .8em;
-    color: black;
-    font-weight: normal;
-}
-
-/* Socials Icons */
-
-.ForsakenBox a img {
-    display: inline-block;
-    width: 2vw;
-    padding-top: .7vw;
-    vertical-align: middle;
-}
-
-.ForsakenBox a img:hover {
-    transform: scale(1.1);
-    transition-duration: .2s;
-}
-
-
-.caption1 {
-    width: 55vw;    
-    margin: auto;
-}
+/* Footer */
 
 
 footer {
     background-color: #2f052b;
     color: white;
     font-family: MyFont;
-    height: 60px;
     display: flex;
-    align-items: center;
+
 }
 
 .footerBody {
@@ -273,4 +213,30 @@ footer {
     width: 33%;
     text-align: right;
     
+}
+
+
+
+
+
+
+
+
+/* retired */
+
+.sources_body {
+    margin-top: 5vh;
+    color:#67055d;
+    font-family: myFont;
+    font-size: 40px;
+}
+
+.sources_body li {
+    color: black;
+    font-size: 20px;
+    margin-top: 2vh;
+    padding-left: 4vh;
+    text-indent: -5vh;
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

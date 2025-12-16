@@ -68,13 +68,7 @@ a {
 
 
 
-footer {
-    background-color: #2f052b;
-    color: white;
-    font-size: 11px;
-    font-family: MyFont;
-    padding-top: 20px;
-}
+
 
 .matches-dropdown {
     display: none;
@@ -174,6 +168,7 @@ footer {
 
 .PlayerIntro a {
     color: white;
+    margin-right: 10px;
     background-color: #2f052b;
     width: 100px;
     padding-top: 10px;
@@ -188,6 +183,7 @@ footer {
     color: red;
     transition-duration: 0.5s;
     text-shadow: 0 0 8px rgba(255, 70, 85, 0.6);
+        
     
 }
 
@@ -241,4 +237,41 @@ p {
 .caption1 {
     width: 57vw;    
     margin: auto;
+}
+
+
+footer {
+    background-color: #2f052b;
+    color: white;
+    font-family: MyFont;
+
+}
+
+
+.footerBody {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #2f052b;
+    height: 60px;
+
+}
+
+.copyright {
+    width: 33%;
+    text-align: left;
+
+}
+
+.sources {
+    width: 33%;
+    text-align: center;
+}
+
+
+.contactinfo {
+    width: 33%;
+    text-align: right;
+    
 }

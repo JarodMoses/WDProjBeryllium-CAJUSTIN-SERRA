@@ -298,7 +298,6 @@ p {
 
 .Jing  {
     display:none;
-    visibility: hidden;
     width: 57vw;
     height: 50vh;
     margin: 10px auto auto auto;
@@ -327,22 +326,23 @@ p {
 
 
 .Forsaken  {
-    display: flex;
-    width: 57vw;
+    display: none;
+    width: 63vw;
     height: 50vh;
-    margin: 10px auto auto auto;
+    margin: 10px auto 1vh auto;
     background-color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
     color:#000000;
     background-color: rgba(219, 215, 215, 0.37);
     gap: 20px;
-    flex-wrap:unset  
+    flex-wrap:unset;
 }
 
 .ForsakenBox {
+    display: none;
     margin: 5vh auto auto auto;
-    display: block; 
+
 }
 
 .Forsaken img {
@@ -355,6 +355,98 @@ p {
     transition-duration: .2s;
 }
 
+
+.Something  {
+    display:none;
+    width: 63vw;
+    height: 50vh;
+    margin: 10px auto 1vh auto;
+    background-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color:#000000;
+    background-color: rgba(219, 215, 215, 0.37);
+    gap: 20px;
+    flex-wrap:unset;
+}
+
+.SomethingBox {
+    display: none;
+    margin: 5vh auto auto auto;
+
+}
+
+.Something img {
+    height: 50vh;
+    display: block;
+}
+
+.Something img:hover {
+    transform: scale(1.05);
+    transition-duration: .2s;
+}
+
+
+.Patmen  {
+    display:none;
+    width: 64vw;
+    height: 50vh;
+    margin: 10px auto 1vh auto;
+    background-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color:#000000;
+    background-color: rgba(219, 215, 215, 0.37);
+    gap: 20px;
+    flex-wrap:unset;
+}
+
+.PatmenBox {
+    display:none;
+    margin: 15vh auto auto auto;
+
+}
+
+.Patmen img {
+    height: 50vh;
+    display: block;
+}
+
+.Patmen img:hover {
+    transform: scale(1.05);
+    transition-duration: .2s;
+}
+
+
+.Davai  {
+    display:none;
+    width: 67vw;
+    height: 50vh;
+    margin: 10px auto 1vh auto;
+    background-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.835rem;
+    color:#000000;
+    background-color: rgba(219, 215, 215, 0.37);
+    gap: 20px;
+    flex-wrap:unset;
+}
+
+.DavaiBox {
+    display:none;
+    margin: 15vh auto auto auto;
+
+}
+
+.Davai img {
+    height: 50vh;
+    display: block;
+}
+
+.Davai img:hover {
+    transform: scale(1.05);
+    transition-duration: .2s;
+}
 
 
 .ThankYouText {
@@ -403,16 +495,39 @@ p {
 footer {
     background-color: #2f052b;
     color: white;
-    font-size: 11px;
     font-family: MyFont;
-    padding-top: 20px;
 }
 
 
 
 
+.footerBody {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #2f052b;
+    height: 60px;
+
+}
+
+.copyright {
+    width: 33%;
+    text-align: left;
+
+}
+
+.sources {
+    width: 33%;
+    text-align: center;
+}
 
 
+.contactinfo {
+    width: 33%;
+    text-align: right;
+    
+}
 
 
 
