@@ -277,9 +277,24 @@ p {
 }
 
 .Submit {
-    width: 30vw;
-    margin-bottom: 10vh;
+    margin-top: 4vh;
+    width: 40%;
+    margin-top: 3vh;    
+    margin-bottom: 5vh;
 }
+
+.FillChoices {
+    display: none;
+    width: 100%;
+        margin-bottom: 5vh;
+    margin-top: -3vh;
+    
+}
+
+.FillChoices h1 {
+    color:Red;
+}
+
 
 .Jing  {
     display:none;
@@ -293,12 +308,8 @@ p {
     color:#000000;
     background-color: rgba(219, 215, 215, 0.37);
     gap: 20px;
-    flex-wrap:unset
-    
-    
+    flex-wrap:unset  
 }
-
-
 
 .JingBox {
     margin: 5vh auto auto auto;
@@ -315,6 +326,34 @@ p {
 }
 
 
+.Forsaken  {
+    display: flex;
+    width: 57vw;
+    height: 50vh;
+    margin: 10px auto auto auto;
+    background-color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color:#000000;
+    background-color: rgba(219, 215, 215, 0.37);
+    gap: 20px;
+    flex-wrap:unset  
+}
+
+.ForsakenBox {
+    margin: 5vh auto auto auto;
+    display: block; 
+}
+
+.Forsaken img {
+    height: 50vh;
+    display: block;
+}
+
+.Forsaken img:hover {
+    transform: scale(1.05);
+    transition-duration: .2s;
+}
 
 
 

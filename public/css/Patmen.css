@@ -241,3 +241,8 @@ p {
     transform: scale(1.1);
     transition-duration: .2s;
 }
+
+.caption1 {
+    width: 57vw;    
+    margin: auto;
+}
