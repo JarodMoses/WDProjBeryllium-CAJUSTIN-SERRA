@@ -52,9 +52,43 @@ SHOP
 ABOUT US PAGE:
 * Info about the website creators
 * Why we made this website
-
+* 
 
 Link to Wireframe: [Wireframe](https://github.com/BenedictSerra/WDProjBeryllium-CAJUSTIN-SERRA/blob/patch-1/CAJUSTIN%26%26SERRA_WIRE%20FRAME.pdf)
+
+
+
+## HTML Form and Design 
+This website will include a Player Profile, and a Player Profile Editor Form that will collect and store information of the users of the website. This information will be displayed on the website, where other 
+users can see it.
+
+In order to access these features, users will first need to use the Player Profile Editor Form to to sign up, then log in through the login webpage. Users will have the option to edit their profile whenever they want by clicking on the profile icon that will be implemented to the website. The Player Profile Editor Form will collect the following information:
+
+Username:
+Email Address:
+Password:
+Bio:
+Main Role:
+Main Agent:
+Rank:
+Region:
+Favorite PRX Player:
+
+This information can help users matchmake with other users, so that they can create a party and play together.
+
+### Webpages Being Implemented
+
+Profile Editor Form -- This will be the implementation of the HTML form, where users can put their information, which will be collected and saved by the form.
+Profile Display -- This will be a webpage where the saved information collected from the Profile Editor Form will be displayed
+Login -- This will be a webpage returning users can access their existing profile using their username and password.
+
+You can view the wireframes to these webpages [here]()
+
+### Integration
+
+A profile icon will be implemented into the website, where if not yet logged in, users will be sent to the login page when clicked.
+
+
 
 
 
