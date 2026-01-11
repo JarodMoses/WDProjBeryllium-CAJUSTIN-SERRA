@@ -82,7 +82,7 @@ Profile Editor Form -- This will be the implementation of the HTML form, where u
 Profile Display -- This will be a webpage where the saved information collected from the Profile Editor Form will be displayed
 Login -- This will be a webpage returning users can access their existing profile using their username and password.
 
-You can view the wireframes to these webpages [here]()
+You can view the wireframes to these webpages [here](CAJUSTIN&&SERRA_HTML_WIREFRAME.pdf)
 
 ### Integration
 
