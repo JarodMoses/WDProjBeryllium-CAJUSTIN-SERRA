@@ -64,15 +64,15 @@ users can see it.
 
 In order to access these features, users will first need to use the Player Profile Editor Form to to sign up, then log in through the login webpage. Users will have the option to edit their profile whenever they want by clicking on the profile icon that will be implemented to the website. The Player Profile Editor Form will collect the following information:
 
-Username:
-Email Address:
-Password:
-Bio:
-Main Role:
-Main Agent:
-Rank:
-Region:
-Favorite PRX Player:
+Username: <br>
+Email Address: <br>
+Password: <br>
+Bio: <br>
+Main Role: <br>
+Main Agent: <br>
+Rank: <Br>
+Region: <br>
+Favorite PRX Player: <Br>
 
 This information can help users matchmake with other users, so that they can create a party and play together.
 
