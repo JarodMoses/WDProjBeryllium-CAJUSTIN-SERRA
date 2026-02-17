@@ -1,24 +1,50 @@
-/* INDEX STYLING */
-
 body {
     margin: 0;
+    background-color: #1E1030;
+
 }
 
 
 /* Navbar styling */
 .navbar {
-    font-size: 15px;
-    gap: 11.63vw;
-    display: flex;
     list-style-type: none;
-    padding-inline: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;   
+    border-bottom: 1px solid rgb(49, 33, 64);
+
+ }
+
+.navbar-container{
+    display: flex;
     align-items: center;
-    background-color: #2f052b;
-    padding-bottom: 5px;
-    padding-top: 5px; 
+    padding: 32px;
+    padding-left: 9%;
+    padding-right: 10%;  
+    height: 40px;   
+    margin: 0 auto;
+    background: rgba(30, 16, 48, 0.92); 
+    backdrop-filter: blur(6px);   
 }
 
-.navbar li {
+
+.navlinks {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-left: auto;  
+    padding: 0;
+}
+
+
+
+
+
+
+
+.navbar-container li {
     position: relative;
 }
 
@@ -27,160 +53,118 @@ body {
 a:link {
    text-decoration: none;
     color: white;
-    font-family: MyFont;
-    font-size: 15px;
+    font-family: myFont;
+    font-size: 20px;
     display: inline-block;        
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
+a:visited {
+    color: white;
+}
+
 /* So dropdown links dont get targeted */
 
-.navbar > li > a:hover {
-    transform: scale(1.2); 
-    color: red; 
+.navlinks > li > a:hover {
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
     transition-duration: .5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
 }
 
 
 
-@font-face { /* Font */
+@font-face {
     font-family: MyFont;
-    src: url(Valorant\ Font.ttf);
+    src: url(Oswald-VariableFont_wght.ttf);
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; 
   }
 
 
 
-a {
-    text-decoration: none;
-    color: white;
-    font-family: MyFont;
-
-}
-
-/* Dropdowns */
-
-.matches-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 50%;         
-    transform: translateX(-50%); 
-    background-color: #2f052b;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    padding-top: 10px;
-
-}
-
-.matches-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    font-family: MyFont;
-    text-align: center;
-
-}
-
-.matches-dropdown a:hover {
-    color: red;
-    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
-}
-
-.matches:hover .matches-dropdown {
-    display: block; 
-    
-}
-
-.matches:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
-
-}
-
-
-.players-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 50%;         
-    transform: translateX(-50%); 
-    background-color: #2f052b;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    padding-top: 10px;
-
-}
-
-.players-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    font-family: MyFont;
-    text-align: center;
-
-}
-
-.players-dropdown a:hover {
-    color: red;
-    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
-}
-
-.players:hover .players-dropdown {
-    display: block; 
-    
-}
-
-.players:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
-
-}
-
-
-
-/* Body image */
-
-.prxpic {
-    width: 100%;
-    display: block;
-    margin: auto;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 100%);
-}
-
-
-
-
-/* Text @ bottom */
-
-.homeintro h1 {
-    font-family: myFont;
-    color: #67055d;
-    text-align: center;
-    padding: 0;
-    margin-bottom: -15px;
-    
-}
-
-
-
-.homeintro p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    margin: auto;
-    margin-top: 15px;
-    padding-bottom: 30px;
+.SourcesBody {
+    position: relative;
     width: 80%;
+    margin: 150px auto 49px auto;
+    background-color: #271341;
+    border-top: 2px solid rgb(49, 33, 64);
+    border-bottom: 2px solid rgb(49, 33, 64);
+    padding-top: 10px;
+    color: white;
+    font-family: MyFont;
+    
 }
 
-/* Footer */
+.SourcesBody > p {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    color: rgb(207, 193, 209);
+    text-align: center;
+}
+
+
+
+
+
+.SourcesContent {
+    width: 93%;
+    padding-top: 10px;
+    margin: auto;
+    padding-bottom: 40px;
+
+
+}
+
+.SourcesContent > img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #857484;
+    margin-right: 20px;
+}
+
+
+.SourcesTexts img {
+    
+    display: inline-block;
+    width: 2vw;
+    vertical-align: middle;
+}
+
+.SourcesTexts img:hover {
+    transform: scale(1.1);
+    transition-duration: .2s;
+}
+
+.SourcesBody h1 {
+    margin-top: 0;
+    font-family: MyFont;
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: -20px;
+    color: #b992b5;    
+}
+
+.SourcesTexts >  p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: MyFont;
+    color:white;
+}
+
+p {
+    font-family: MyFont;
+    color: white;
+    font-size: 20px;
+}
+
+
 
 
 footer {
-    background-color: #2f052b;
+    border-top: 1px solid rgb(48, 48, 48);
     color: white;
     font-family: MyFont;
     display: flex;
@@ -192,8 +176,8 @@ footer {
     font-size: 12px;
     display: flex;
     align-items: center;
-    background-color: #2f052b;
-    height: 60px;
+    background-color: #150a24;
+    height: 100px;
 
 }
 
@@ -213,30 +197,4 @@ footer {
     width: 33%;
     text-align: right;
     
-}
-
-
-
-
-
-
-
-
-/* retired */
-
-.sources_body {
-    margin-top: 5vh;
-    color:#67055d;
-    font-family: myFont;
-    font-size: 40px;
-}
-
-.sources_body li {
-    color: black;
-    font-size: 20px;
-    margin-top: 2vh;
-    padding-left: 4vh;
-    text-indent: -5vh;
-    list-style-type: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

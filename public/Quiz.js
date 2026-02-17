@@ -55,6 +55,7 @@
     }
 
     function Submit(){
+ 
         
     if (JingTotal+ForsakenTotal+SomethingTotal+PatmenTotal+DavaiTotal == 11)
     {
@@ -78,68 +79,22 @@
             d.style.display = "flex";
         }
 
-        var Winner = Math.max(JingTotal, ForsakenTotal, PatmenTotal, DavaiTotal, SomethingTotal);
+        let highest = Math.max(JingTotal, ForsakenTotal, PatmenTotal, DavaiTotal, SomethingTotal)
 
-            
-        
-        if (JingTotal == Winner)    /* If jing is highest */
-        {
-            var e = document.getElementById("Jing") /*Unhide the hidden blocks */
-            
-            {
-                e.style.display = "flex";
-            }
+        let tied = [];
+       
+        if (JingTotal === highest) tied.push("Jing");
+        if (ForsakenTotal === highest) tied.push("Forsaken");
+        if (SomethingTotal === highest) tied.push("Something");
+        if (PatmenTotal === highest) tied.push("Patmen");
+        if (DavaiTotal === highest) tied.push("Davai");
 
-            var f = document.getElementById("JingBox")
-            {
-                f.style.display = "block";
-            }
-        }
+        let Winner = tied[Math.floor(Math.random() * tied.length)];
+
+        document.getElementById(Winner + "Box").style.display = "block";
 
         
-        if (ForsakenTotal == Winner) /*if forsaken is highest */
-        {
-            var e = document.getElementById("Forsaken")/*Unhide the hidden blocks */
-            {
-                e.style.display = "flex";
-            }
 
-            var f = document.getElementById("ForsakenBox")
-            f.style.display = "block";
-        }
-
-
-        if (SomethingTotal == Winner)
-        {
-            var e = document.getElementById("Something")/*Unhide the hidden blocks */
-            {
-                e.style.display = "flex"
-            }
-
-            var f = document.getElementById("SomethingBox")
-                f.style.display = "block";
-            
-        }
-
-        if (PatmenTotal == Winner)
-        {
-            var e = document.getElementById("Patmen")/*Unhide the hidden blocks */
-                e.style.display = "flex";
-
-            var f = document.getElementById("PatmenBox")
-                f.style.display = "block";
-            
-        }
-        
-        if (DavaiTotal == Winner)
-        {
-            var e = document.getElementById("Davai")/*Unhide the hidden blocks */
-                e.style.display = "flex";
-
-            var f = document.getElementById("DavaiBox")
-                f.style.display = "block";
-            
-        }
     }
 
     else 

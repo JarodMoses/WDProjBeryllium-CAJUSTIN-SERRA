@@ -62,10 +62,11 @@ a:link {
 /* So dropdown links dont get targeted */
 
 .navlinks > li > a:hover {
-    transform: scale(1.2); 
-    color: red; 
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
     transition-duration: .5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
 }
 
 
@@ -90,11 +91,6 @@ a {
 
 
 
-.players:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
-
-}
 
 
 
@@ -104,8 +100,11 @@ a {
 
 
 .players:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
+    transition-duration: .5s;
 
 }
 
@@ -136,7 +135,7 @@ a {
     height: auto;
     display: block;
     margin: 0 auto;
-    filter: brightness(40%);
+    filter: brightness(60%);
 }
 
 .RosterBody {
@@ -145,11 +144,12 @@ a {
     padding-top: 0;
     margin-top: 0px;
     width: 80%;
-
-    margin: auto;
-    background-color: #201035;
-    border-top: 1px solid rgb(49, 33, 64);
+    margin: auto auto 49px auto;
+    background-color: #271341;
+    border-top: 1px solid #b992b5;
+    padding-bottom: 40px;
 }
+
 
 .RosterBody h1 {
     font-family: MyFont;
@@ -160,7 +160,7 @@ a {
     color: #b992b5;    
 }
 
-.RosterBody p {
+.RosterTexts  p {
     font-size: 20px;
     font-family: MyFont;
     padding-left: 30px;
@@ -176,64 +176,56 @@ a {
 /* Images of Players */
 
 .PlayerPictures {
-    
-    display: flex;
-    justify-content: center;
-    padding-left: 4px;
-    gap: 200px;                 
-    flex-wrap: wrap; 
-    margin-bottom: 50px;
-}
-
-.PlayerPictures2 {
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-    padding-left: 4px;
-}
-
-.Player-Pictures {
-    border: solid #555;
-    border-radius: 10px;
-}
-
-.Player-Pictures:hover {
-   transform: scale(1.2); 
-   transition-duration: .5s; 
-}
-
-/* Text at the bottom & quiz button */
-
-.PlayerIntro {
-    padding-top: 30px;
-    font-family: MyFont;
-    font-size: 20px;
-    text-align: center;
-    width: 80%;
+    padding-top: 15px;
+    width: 90%;
     margin: auto;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 19px;                 
+    flex-wrap: wrap; 
+    text-align: center;
+    padding-bottom: 20px;
 
+}
+
+
+
+
+
+.PlayerPictures a {
+    
+    background-color: #2b1439;
+    border-radius: 15px;
+    border: 2px solid #471b5f;
+    overflow: hidden;
+    transition: transform .2 ease, box-shadow .2 ease;
+    display: block;
     
 }
 
-.PlayerIntro a {
-    color: white;
-    background-color: #2f052b;
-    width: 100px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
+.PlayerPictures a:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(152, 16, 197, 0.773)
+}
+
+.imagewrap {
+    height: 180px;
 
 }
 
-
-.PlayerIntro a:hover {
-    transform: scale(1.15);
-    color: red;
-    transition-duration: 0.5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6); 
+.PlayerInfo p {
+    margin-top: -15px;
 }
+
+.PlayerInfo h3 {
+    color: #b992b5;
+}
+.Player-Pictures {
+    background-color: #45165e;
+    
+}
+
+
 
 
 footer {

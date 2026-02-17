@@ -66,7 +66,6 @@ a:visited {
 /* So dropdown links dont get targeted */
 
 .navlinks > li > a:hover {
-
     color: rgb(140, 0, 255); 
     text-shadow:
     0 0 5px rgba(185, 146, 181, 0.4),
@@ -86,156 +85,134 @@ a:visited {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.Banner {
-    position: relative;
-    padding-top: 130px;
-}
-
-.BANNERTITLE {
-    color: white;
-    margin-top: -216px;
-    z-index: 3;
-    position: relative;
-    margin-bottom: 130px;
-}
-
-.BANNERTITLE h1 {
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-family: myFont;
-}
-
-#PRXBANNER {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    filter: brightness(60%);
-}
-
-.SomethingBody {
+.AccountsBody {
     position: relative;
     width: 80%;
-    margin: auto auto 49px auto;
+    margin: 200px auto 49px auto;
     background-color: #271341;
     border-top: 2px solid rgb(49, 33, 64);
     border-bottom: 2px solid rgb(49, 33, 64);
+    font-family: MyFont;
+    color: white;
+    text-align: center; 
     
 }
 
-.SomethingBody > p {
+.AccountsBody  h1 {
+    color: #b992b5;    
+}
 
+.AccountsBody > p {
     padding-left: 3.5%;
     padding-right: 3.5%;
     color: rgb(207, 193, 209);
     text-align: center;
 }
 
-.SomethingBody > a {
-    display: block;
-    background-color: #1E1030;
-    width: 80px;
-    text-align: center;
-    border-radius: 5px;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-.SomethingBody > a:hover {
-    transform: scale(1.1); 
-    color: rgb(140, 0, 255); 
-    text-shadow:
-    0 0 5px rgba(185, 146, 181, 0.4),
-    0 0 15px rgba(138, 43, 226, 0.4);
-    transition-duration: .5s;
-}
-
-
-.Back {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.Back a {
-    display: inline-block;
-    color: white;
-    padding-right: 10px;
-}
-
-.Back a:hover {
-    color: rgb(140, 0, 255); 
-    text-shadow:
-    0 0 5px rgba(185, 146, 181, 0.4),
-    0 0 15px rgba(138, 43, 226, 0.4);
-    transition-duration: .5s;
-}
 
 
 
-.SomethingContent {
+.AccountsContent {
+
     width: 93%;
-    display: flex;
-    padding-top: 10px;
     margin: auto;
     padding-bottom: 40px;
+
+
+}
+
+.Filters {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(49, 33, 64);
+    margin-bottom: 10px;
+}
+
+.BrowseAccs {
     border-bottom: 2px solid rgb(49, 33, 64);
 }
 
-.SomethingContent > img {
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-    border: 3px solid #857484;
-    margin-right: 20px;
-}
 
 
-.SomethingTexts img {
-    
-    display: inline-block;
-    width: 2vw;
-    vertical-align: middle;
-}
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #141821;
+    border: 1px solid #2a2f3a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(135, 1, 225, 0.55);
+  }
 
-.SomethingTexts img:hover {
-    transform: scale(1.1);
-    transition-duration: .2s;
-}
+  thead {
+    background: linear-gradient(90deg, #1b093c, #961dd2);
+  }
 
-.SomethingBody h1 {
-    margin-top: 0;
-    font-family: MyFont;
-    text-align: left;
-    font-size: 40px;
-    margin-bottom: -20px;
-    color: #b992b5;    
-}
+  th {
+    padding: 12px;
+    text-align: center;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-bottom: 1px solid #2a2f3a;
+  }
 
-.SomethingTexts >  p {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family: MyFont;
-    color:white;
-}
+  td {
+    padding: 10px 12px;
+    text-align: center;
+    border-bottom: 1px solid #232838;
+    color: #e6e6e6;
+  }
+
+  tbody tr {
+    background: #141821;
+    transition: 0.2s;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #171c26;
+  }
+
+  tbody tr:hover {
+    background: #640aff2a; 
+    transform: scale(1.01);
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+
 
 p {
     font-family: MyFont;
-    color: white;
+    color: #ffdd00;   
     font-size: 20px;
 }
 
+
+#total {
+    text-align: left;
+}
+
+select {
+    margin-bottom: 7px;
+    margin-top: 7px;
+    width: 40%;
+    height: 40px;
+    background-color: #1E1030;
+    color:white;
+    border: 1.5px solid rgb(81, 25, 98);
+    padding-left: 10px;
+
+}
+
+select:focus {
+    outline: none;
+    border: 1.5px solid rgb(165, 31, 206);
+}
 
 
 
