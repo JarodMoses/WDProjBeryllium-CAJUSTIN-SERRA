@@ -38,17 +38,9 @@ body {
     padding: 0;
 }
 
-
-
-
-
-
-
 .navbar-container li {
     position: relative;
 }
-
-
 
 a:link {
    text-decoration: none;
@@ -63,8 +55,6 @@ a:visited {
     color: white;
 }
 
-/* So dropdown links dont get targeted */
-
 .navlinks > li > a:hover {
     color: rgb(140, 0, 255); 
     text-shadow:
@@ -72,8 +62,6 @@ a:visited {
     0 0 15px rgba(138, 43, 226, 0.4);
     transition-duration: .5s;
 }
-
-
 
 @font-face {
     font-family: MyFont;
@@ -83,13 +71,13 @@ a:visited {
   }
 
 
-
+/*SOURCES BODY*/
 .SourcesBody {
     position: relative;
     width: 80%;
     margin: 150px auto 49px auto;
     background-color: #271341;
-    border-top: 2px solid rgb(49, 33, 64);
+    border-top: 2px solid rgb(184, 3, 244);;
     border-bottom: 2px solid rgb(49, 33, 64);
     padding-top: 10px;
     color: white;
@@ -162,7 +150,7 @@ p {
 
 
 
-
+/*FOOTER*/
 footer {
     border-top: 1px solid rgb(48, 48, 48);
     color: white;

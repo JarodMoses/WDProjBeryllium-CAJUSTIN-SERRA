@@ -38,12 +38,6 @@ body {
     padding: 0;
 }
 
-
-
-
-
-
-
 .navbar-container li {
     position: relative;
 }
@@ -63,7 +57,6 @@ a:visited {
     color: white;
 }
 
-/* So dropdown links dont get targeted */
 
 .navlinks > li > a:hover {
     color: rgb(140, 0, 255); 
@@ -82,16 +75,17 @@ a:visited {
     font-style: normal; 
   }
 
+/*CREATE BODY */
 
 .CreateBody {
     padding-right: 15px;
     padding-left: 15px;
     position: relative;
     width: 30%;
-    margin: 150px    auto 79px auto;
+    margin: 150px    auto 50px auto;
     background-color: #271341;
-    border-top: 2px solid rgb(49, 33, 64);
-    border-bottom: 2px solid rgb(49, 33, 64);
+    border-top: 2px solid rgb(184, 3, 244);
+    border-bottom: 2px solid rgb(184, 3, 244);
     
 }
 
@@ -117,10 +111,10 @@ a:visited {
 }
 
 .CreateContent {
-    width: 93%;
+    width: 95%;
     margin: auto;
     font-family: MyFont;
-    color: rgb(183, 174, 174);
+    color: white;
 }
 
 .CreateAccount {
@@ -189,9 +183,6 @@ input:focus {
     display: flex;
     flex-wrap: wrap;
     margin-top: 7px;
-
-
-
 }
 
 .chosenplayer { opacity: 0.9; font-size: 0.95rem; }
@@ -220,18 +211,18 @@ button:hover {
 
 p {
     font-family: MyFont;
-    color: rgb(204, 186, 186);
+    color: rgb(237, 14, 249);
     font-size: 20px;
 }
 
 h1 {
     font-family: MyFont;
-    color:#ffffff;    
+    color:#b992b5;   
 
 }
 
 
-
+/*Footer Body */
 
 footer {
     border-top: 1px solid rgb(48, 48, 48);

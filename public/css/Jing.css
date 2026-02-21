@@ -38,12 +38,6 @@ body {
     padding: 0;
 }
 
-
-
-
-
-
-
 .navbar-container li {
     position: relative;
 }
@@ -63,8 +57,6 @@ a:visited {
     color: white;
 }
 
-/* So dropdown links dont get targeted */
-
 .navlinks > li > a:hover {
     color: rgb(140, 0, 255); 
     text-shadow:
@@ -73,8 +65,6 @@ a:visited {
     transition-duration: .5s;
 }
 
-
-
 @font-face {
     font-family: MyFont;
     src: url(Oswald-VariableFont_wght.ttf);
@@ -82,20 +72,7 @@ a:visited {
     font-style: normal; 
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*BANNER*/
 .Banner {
     position: relative;
     padding-top: 130px;
@@ -124,18 +101,18 @@ a:visited {
     filter: brightness(60%);
 }
 
+/*JING BODY*/
 .JingBody {
     position: relative;
     width: 80%;
     margin: auto auto 49px auto;
     background-color: #271341;
-    border-top: 2px solid rgb(49, 33, 64);
+    border-top: 2px solid rgb(184, 3, 244);;
     border-bottom: 2px solid rgb(49, 33, 64);
     
 }
 
 .JingBody > p {
-
     padding-left: 3.5%;
     padding-right: 3.5%;
     color: rgb(207, 193, 209);
@@ -235,9 +212,7 @@ p {
     font-size: 20px;
 }
 
-
-
-
+/*FOOTER*/
 footer {
     border-top: 1px solid rgb(48, 48, 48);
     color: white;

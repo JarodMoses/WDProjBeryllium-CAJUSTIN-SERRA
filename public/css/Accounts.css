@@ -63,7 +63,6 @@ a:visited {
     color: white;
 }
 
-/* So dropdown links dont get targeted */
 
 .navlinks > li > a:hover {
     color: rgb(140, 0, 255); 
@@ -83,14 +82,14 @@ a:visited {
   }
 
 
-
+/*Accounts body */
 
 .AccountsBody {
     position: relative;
     width: 80%;
-    margin: 200px auto 49px auto;
+    margin: 150px auto 49px auto;
     background-color: #271341;
-    border-top: 2px solid rgb(49, 33, 64);
+    border-top: 2px solid rgb(184, 3, 244);
     border-bottom: 2px solid rgb(49, 33, 64);
     font-family: MyFont;
     color: white;
@@ -108,9 +107,6 @@ a:visited {
     color: rgb(207, 193, 209);
     text-align: center;
 }
-
-
-
 
 .AccountsContent {
 
@@ -215,6 +211,7 @@ select:focus {
 }
 
 
+/*FOOTER*/
 
 footer {
     border-top: 1px solid rgb(48, 48, 48);

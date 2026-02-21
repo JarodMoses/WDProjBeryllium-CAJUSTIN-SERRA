@@ -38,17 +38,9 @@ body {
     padding: 0;
 }
 
-
-
-
-
-
-
 .navbar-container li {
     position: relative;
 }
-
-
 
 a:link {
    text-decoration: none;
@@ -59,8 +51,6 @@ a:link {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* So dropdown links dont get targeted */
-
 .navlinks > li > a:hover {
     color: rgb(140, 0, 255); 
     text-shadow:
@@ -69,8 +59,6 @@ a:link {
     transition-duration: .5s;
 }
 
-
-
 @font-face {
     font-family: MyFont;
     src: url(Oswald-VariableFont_wght.ttf);
@@ -78,26 +66,12 @@ a:link {
     font-style: normal; 
   }
 
-
-
 a {
     text-decoration: none;
     color: white;
     font-family: MyFont;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .players:hover > a {
     color: rgb(140, 0, 255); 
@@ -108,8 +82,7 @@ a {
 
 }
 
-
-
+/*BANNER*/
 .Banner {
     position: relative;
     padding-top: 130px;
@@ -138,6 +111,7 @@ a {
     filter: brightness(60%);
 }
 
+/*ROSTER BODY*/
 .RosterBody {
     position: relative;
     z-index: 3;
@@ -146,7 +120,7 @@ a {
     width: 80%;
     margin: auto auto 49px auto;
     background-color: #271341;
-    border-top: 1px solid #b992b5;
+    border-top: 2px solid rgb(184, 3, 244);
     padding-bottom: 40px;
 }
 
@@ -227,7 +201,7 @@ a {
 
 
 
-
+/*FOOTER*/
 footer {
     border-top: 1px solid rgb(48, 48, 48);
     color: white;
