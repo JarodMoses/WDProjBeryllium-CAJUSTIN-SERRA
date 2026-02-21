@@ -13,16 +13,6 @@
 
     let Questions = Array(11).fill(null); /* Make an array of length 11 with nulls */
 
-
-
-    // variable to keep track
-
-    
-
-
-
-
-
     function Question(Qnum, player, button){
         if (Questions[Qnum] === 'Jing') JingTotal--;    /* If at first they clicked Jing, then changed their mind in the same question, it will minus 1 from jing since it added 1 to him. */
         if (player === 'Jing') JingTotal++;             /* Adds to jing if its selected */
@@ -42,8 +32,7 @@
         Questions[Qnum] = player;                       /* Stores it incase of answer change */
 
     
-
-
+        
         const buttons = button.parentElement.querySelectorAll("button");    /*Puts all the buttons in the parent element in an array */
         
         for (let i = 0; i < buttons.length; i++)      /*Removes the class "selected" from all of the buttons, in case of mind change again*/
@@ -55,6 +44,21 @@
     }
 
     function Submit(){
+
+    for (let i = 0; i < Questions.length; i++) {  /*Scrolls to the unanswered question */
+        if (Questions[i] === null) { //Checks if there are elements in Questions array are null
+
+            document.getElementById("Retry").style.display = "inline";
+
+            document.getElementById("Q" + (i+1)).scrollIntoView({  //Scrolls to the null element
+                block: "center",
+                behavior: "smooth",
+            });
+
+            return;
+        }
+    }
+ 
         
     if (JingTotal+ForsakenTotal+SomethingTotal+PatmenTotal+DavaiTotal == 11)
     {
@@ -78,68 +82,26 @@
             d.style.display = "flex";
         }
 
-        var Winner = Math.max(JingTotal, ForsakenTotal, PatmenTotal, DavaiTotal, SomethingTotal);
+        let highest = Math.max(JingTotal, ForsakenTotal, PatmenTotal, DavaiTotal, SomethingTotal)
 
-            
+        let tied = [];
+       
+        if (JingTotal === highest) tied.push("Jing");
+        if (ForsakenTotal === highest) tied.push("Forsaken");
+        if (SomethingTotal === highest) tied.push("Something");
+        if (PatmenTotal === highest) tied.push("Patmen");      
+        if (DavaiTotal === highest) tied.push("Davai");
+        /*Pushing winner into a array in case of tie */
+
+        let Winner = tied[Math.floor(Math.random() * tied.length)];  /*Chooses a random winner in the tie */
+
+        document.getElementById(Winner + "Box").style.display = "block";
+        window.scrollTo({
+            top: 330,
+            behavior: "smooth"  /*Goes up a bit so you will see the result */
+        });
+
         
-        if (JingTotal == Winner)    /* If jing is highest */
-        {
-            var e = document.getElementById("Jing") /*Unhide the hidden blocks */
-            
-            {
-                e.style.display = "flex";
-            }
-
-            var f = document.getElementById("JingBox")
-            {
-                f.style.display = "block";
-            }
-        }
-
-        
-        if (ForsakenTotal == Winner) /*if forsaken is highest */
-        {
-            var e = document.getElementById("Forsaken")/*Unhide the hidden blocks */
-            {
-                e.style.display = "flex";
-            }
-
-            var f = document.getElementById("ForsakenBox")
-            f.style.display = "block";
-        }
-
-
-        if (SomethingTotal == Winner)
-        {
-            var e = document.getElementById("Something")/*Unhide the hidden blocks */
-            {
-                e.style.display = "flex"
-            }
-
-            var f = document.getElementById("SomethingBox")
-                f.style.display = "block";
-            
-        }
-
-        if (PatmenTotal == Winner)
-        {
-            var e = document.getElementById("Patmen")/*Unhide the hidden blocks */
-                e.style.display = "flex";
-
-            var f = document.getElementById("PatmenBox")
-                f.style.display = "block";
-            
-        }
-        
-        if (DavaiTotal == Winner)
-        {
-            var e = document.getElementById("Davai")/*Unhide the hidden blocks */
-                e.style.display = "flex";
-
-            var f = document.getElementById("DavaiBox")
-                f.style.display = "block";
-            
-        }
     }
 
     else 
@@ -147,9 +109,6 @@
         var g = document.getElementById("Retry") /* if answers != 11 */
             g.style.display = "inline";
     }
-
-        
-
         
     }
 

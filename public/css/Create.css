@@ -75,55 +75,23 @@ a:visited {
     font-style: normal; 
   }
 
+/*CREATE BODY */
 
-/*BANNER*/
-.Banner {
+.CreateBody {
+    padding-right: 15px;
+    padding-left: 15px;
     position: relative;
-    padding-top: 130px;
-}
-
-.BANNERTITLE {
-    color: white;
-    margin-top: -216px;
-    z-index: 3;
-    position: relative;
-    margin-bottom: 130px;
-}
-
-.BANNERTITLE h1 {
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-family: myFont;
-}
-
-#PRXBANNER {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    filter: brightness(60%);
-}
-
-/*DAVAI BODY*/
-.DavaiBody {
-    position: relative;
-    width: 80%;
-    margin: auto auto 49px auto;
+    width: 30%;
+    margin: 150px    auto 50px auto;
     background-color: #271341;
-    border-top: 2px solid rgb(184, 3, 244);;
-    border-bottom: 2px solid rgb(49, 33, 64);
+    border-top: 2px solid rgb(184, 3, 244);
+    border-bottom: 2px solid rgb(184, 3, 244);
     
 }
 
-.DavaiBody > p {
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-    color: rgb(207, 193, 209);
-    text-align: center;
-}
 
-.DavaiBody > a {
+
+.CreateBody > a {
     display: block;
     background-color: #1E1030;
     width: 80px;
@@ -133,7 +101,7 @@ a:visited {
     margin-bottom: 30px;
 }
 
-.DavaiBody > a:hover {
+.CreateBody > a:hover {
     transform: scale(1.1); 
     color: rgb(140, 0, 255); 
     text-shadow:
@@ -142,83 +110,120 @@ a:visited {
     transition-duration: .5s;
 }
 
-
-.Back {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.Back a {
-    display: inline-block;
-    color: white;
-    padding-right: 10px;
-}
-
-.Back a:hover {
-    color: rgb(140, 0, 255); 
-    text-shadow:
-    0 0 5px rgba(185, 146, 181, 0.4),
-    0 0 15px rgba(138, 43, 226, 0.4);
-    transition-duration: .5s;
-}
-
-
-
-.DavaiContent {
-    width: 93%;
-    display: flex;
-    padding-top: 10px;
+.CreateContent {
+    width: 95%;
     margin: auto;
-    padding-bottom: 40px;
-    border-bottom: 2px solid rgb(49, 33, 64);
-
-}
-
-.DavaiContent > img {
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-    border: 3px solid #857484;
-    margin-right: 20px;
-}
-
-
-.DavaiTexts img {
-    
-    display: inline-block;
-    width: 2vw;
-    vertical-align: middle;
-}
-
-.DavaiTexts img:hover {
-    transform: scale(1.1);
-    transition-duration: .2s;
-}
-
-.DavaiBody h1 {
-    margin-top: 0;
     font-family: MyFont;
-    text-align: left;
-    font-size: 40px;
-    margin-bottom: -20px;
-    color: #b992b5;    
+    color: white;
 }
 
-.DavaiTexts >  p {
+.CreateAccount {
+    border-bottom: 1px solid rgb(48, 48, 48);
     margin-bottom: 10px;
-    font-size: 20px;
-    font-family: MyFont;
+}
+
+
+
+input {
+    margin-top: 7px;
+    width: 100%;
+    height: 40px;
+    background-color: #1E1030;
+    color:rgb(255, 255, 255);
+    border: 1.5px solid rgb(81, 25, 98);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+select {
+    margin-top: 7px;
+    width: 100%;
+    height: 40px;
+    background-color: #1E1030;
     color:white;
+    border: 1.5px solid rgb(81, 25, 98);
+    padding-left: 10px;
+
+}
+
+select:focus {
+    outline: none;
+    border: 1.5px solid rgb(165, 31, 206);
+}
+
+
+input:focus {
+    outline: none;
+    border: 1.5px solid rgb(165, 31, 206);
+}
+
+
+.player img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 3px solid transparent;
+      border-radius: 14px;
+      transition: 0.2s;
+      background: rgba(0,0,0,0.15);
+      padding: 6px;
+      margin-bottom: 3px;
+}   
+.player img:hover { transform: scale(1.06); }
+
+
+.player img.selected {
+      border: 2px solid rgb(165, 31, 206);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    }
+
+.player {
+    gap: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7px;
+}
+
+.chosenplayer { opacity: 0.9; font-size: 0.95rem; }
+
+
+button {
+    font-family: MyFont;
+    background-color: #c6b1b1;
+    border: none;
+    padding: 12px 48px;
+    border-radius: 1px;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(2px);
+    background-color: rgb(140, 0, 255); 
+    transition-duration: .4s;
+}
+
+.Buttons {
+    border-top: 1px solid rgb(48, 48, 48);
+    padding: 20px 0 20px 0;
+    text-align: center;
 }
 
 p {
     font-family: MyFont;
-    color: white;
+    color: rgb(237, 14, 249);
     font-size: 20px;
 }
 
+h1 {
+    font-family: MyFont;
+    color:#b992b5;   
 
-/*FOOTER*/
+}
+
+
+/*Footer Body */
+
 footer {
     border-top: 1px solid rgb(48, 48, 48);
     color: white;

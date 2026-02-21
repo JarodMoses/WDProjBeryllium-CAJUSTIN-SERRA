@@ -2,141 +2,160 @@
 
 body {
     margin: 0;
+    background-color: #1E1030;
+
 }
 
 
 /* Navbar styling */
 .navbar {
-    font-size: 15px;
-    gap: 11.63vw;
-    display: flex;
     list-style-type: none;
-    padding-inline: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;   
+    border-bottom: 1px solid rgb(49, 33, 64);
+
+ }
+
+.navbar-container{
+    display: flex;
     align-items: center;
-    background-color: #2f052b;
-    padding-bottom: 5px;
-    padding-top: 5px; 
+    padding: 32px;
+    padding-left: 9%;
+    padding-right: 10%;  
+    height: 40px;   
+    margin: 0 auto;
+    background: rgba(30, 16, 48, 0.92); 
+    backdrop-filter: blur(6px);   
 }
 
-.navbar li {
+
+.navlinks {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-left: auto;  
+    padding: 0;
+}
+
+.navbar-container li {
     position: relative;
 }
-
-
 
 a:link {
    text-decoration: none;
     color: white;
     font-family: MyFont;
-    font-size: 15px;
+    font-size: 20px;
     display: inline-block;        
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* So dropdown links dont get targeted */
-
-.navbar > li > a:hover {
-    transform: scale(1.2); 
-    color: red; 
-    transition-duration: .5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
+a:visited {
+    color: white;
 }
 
+.navlinks > li > a:hover {
 
+
+    transition-duration: .5s;
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
+}
 
 @font-face {
     font-family: MyFont;
-    src: url(Valorant\ Font.ttf);
+    src: url(Oswald-VariableFont_wght.ttf);
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; 
   }
 
-
-
-a {
-    text-decoration: none;
-    color: white;
-    font-family: MyFont;
-
+/*BANNER*/
+.Banner {
+    position: relative;
+    padding-top: 130px;
 }
 
-/* Dropdowns */
-
-.matches-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 50%;         
-    transform: translateX(-50%); 
-    background-color: #2f052b;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    padding-top: 10px;
-
+.BANNERTITLE {
+    color: white;
+    margin-top: -216px;
+    z-index: 3;
+    position: relative;
+    margin-bottom: 130px;
 }
 
-.matches-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    font-family: MyFont;
+.BANNERTITLE h1 {
     text-align: center;
-
-}
-
-.matches-dropdown a:hover {
-    color: red;
-    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
-}
-
-.matches:hover .matches-dropdown {
-    display: block; 
-    
-}
-
-.matches:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
-
-}
-
-
-.players-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 50%;         
-    transform: translateX(-50%); 
-    background-color: #2f052b;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    padding-top: 10px;
-
-}
-
-.players-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
+    color: rgb(255, 233, 233);
+    font-size: 50px;
     font-family: MyFont;
+}
+
+#PRXBANNER {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    filter: brightness(60%);
+}
+
+/*QUIZ BODY*/
+.QuizBody {
+    position: relative;
+    width: 80%;
+    margin: auto auto 49px auto;
+    background-color: #271341;
+    border-top: 2px solid rgb(184, 3, 244);;    
+}
+
+.QuizBody > p {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    color: rgb(207, 193, 209);
     text-align: center;
+}
+
+.QuizBody > a {
+    display: block;
+    background-color: #1E1030;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.QuizContent {
+    width: 93%;
+
+    padding-top: 10px;
+    margin:  auto;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(49, 33, 64);
 
 }
 
-.players-dropdown a:hover {
-    color: red;
-    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
+.QuizContent > img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #857484;
+    margin-right: 20px;
 }
 
-.players:hover .players-dropdown {
-    display: block; 
-    
-}
 
-.players:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
-
+ .QuizBody h1 {
+    font-family: MyFont;
+    color: #b992b5;    
 }
 
 
@@ -152,33 +171,31 @@ a {
 
 
 /* Text @ bottom */
+.quizintro {
+    width: 80%;
+    margin: auto;
+    border-bottom: 2px solid rgb(49, 33, 64);
+    margin-bottom: 20px
+
+}
 
 .quizintro h1 {
-    font-family: myFont;
-    color: #67055d;
-    text-align: center;
+    font-family: MyFont;
+    color: #b992b5;
+    text-align: left;
     padding: 0;
     margin-bottom: -30px;
     
 }
 
-h1 {
-    font-family: myFont;
-    color: #67055d;
-    text-align: center;
-}
-
-
-
 .quizintro p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: MyFont;
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     margin: auto;
     padding-bottom: 10px;
     margin-top: 15px;
-    width: 80%;
-    color:black;
+    color:rgba(255, 255, 255, 0.83);
 }
 
 
@@ -190,8 +207,10 @@ p {
 
 
 .button.selected {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6);
+    color: rgb(136, 0, 255);
+        text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
 
 }
 
@@ -200,31 +219,44 @@ p {
 
 
 .Answers  {
-    width: 60%;
-    background-color: rgb(255, 255, 255);
+    width: 100%;
     margin: auto;
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
     border-radius: 5px;
     justify-content: center;
+
 }
 
-
-.Answers button {
-    width: 100%;
-    height: 15vh;
-    background-color: #67055d;
-    color: white;
-    font-family: "myFont";
-    border-radius: 5px;
+.Answers p {
+    font-family: MyFont;
 }
 
 .Answers h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: MyFont;
 }
 
+
+
+.Answers button {
+    width: 80%;
+    margin: auto;
+    height: 15vh;
+    background-color:  #511d6d;
+    color: white;
+    font-family: "MyFont";
+    border-radius: 5px;
+}
+
+
+
 .Answers button:hover {
-    color: red;
+    color: rgb(238, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
+    
     transform: scale(1.02);
     transition-duration: .2s;
 }
@@ -232,6 +264,8 @@ p {
 
 
 .Answers1 {
+    margin-top: 10px;
+    width: 100%;
     margin-bottom: 3vh;
 }
 
@@ -250,18 +284,22 @@ p {
     margin-bottom: 3vh;
 }
 .Answers5 {
+    width: 100%;
     margin-bottom: 3vh;
 }
 
 .Answers6 {
+    width: 100%;
     margin-bottom:  3vh;
 }
 
 .Answers7 {
+    width: 100%;
     margin-bottom: 3vh;
 }
 
 .Answers8 {
+    width: 100%;
     margin-bottom: 3vh;
     width: 100%;
 }
@@ -275,6 +313,11 @@ p {
     margin-bottom: 3vh;
     width: 100%;
 }
+
+.Answers11 {
+    width: 100%;
+}
+
 
 .Submit {
     margin-top: 4vh;
@@ -296,27 +339,34 @@ p {
 }
 
 
-.Jing  {
-    display:none;
-    width: 57vw;
-    height: 50vh;
-    margin: 10px auto auto auto;
-    background-color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color:#000000;
-    background-color: rgba(219, 215, 215, 0.37);
-    gap: 20px;
-    flex-wrap:unset  
-}
-
 .JingBox {
-    margin: 5vh auto auto auto;
     display: none;
 }
 
+.Jing {
+    width: 93%;
+    display: flex;
+    padding-top: 10px;
+    align-items: top;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(49, 33, 64);
+    justify-content: center;
+}
+
+
+
 .Jing img {
-    height: 50vh;
+    height: 35vh;
+    display: block;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px solid #857484;
+}
+
+.JingText {
+    font-family: MyFont;
+    font-size: 25px;
+    color: rgb(220, 211, 211);
 }
 
 .Jing img:hover {
@@ -325,29 +375,34 @@ p {
 }
 
 
-.Forsaken  {
-    display: none;
-    width: 63vw;
-    height: 50vh;
-    margin: 10px auto 1vh auto;
-    background-color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color:#000000;
-    background-color: rgba(219, 215, 215, 0.37);
-    gap: 20px;
-    flex-wrap:unset;
-}
-
 .ForsakenBox {
     display: none;
-    margin: 5vh auto auto auto;
-
 }
 
+.Forsaken {
+    width: 93%;
+    display: flex;
+    padding-top: 10px;
+    align-items: top;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(49, 33, 64);
+    justify-content: center;
+}
+
+
+
 .Forsaken img {
-    height: 50vh;
+    height: 35vh;
     display: block;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px solid #857484;
+}
+
+.ForsakenText {
+    font-family: MyFont;
+    font-size: 25px;
+    color: rgb(220, 211, 211);
 }
 
 .Forsaken img:hover {
@@ -356,29 +411,34 @@ p {
 }
 
 
-.Something  {
-    display:none;
-    width: 63vw;
-    height: 50vh;
-    margin: 10px auto 1vh auto;
-    background-color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color:#000000;
-    background-color: rgba(219, 215, 215, 0.37);
-    gap: 20px;
-    flex-wrap:unset;
-}
-
 .SomethingBox {
     display: none;
-    margin: 5vh auto auto auto;
-
 }
 
+.Something {
+    width: 93%;
+    display: flex;
+    padding-top: 10px;
+    align-items: top;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(49, 33, 64);
+    justify-content: center;
+}
+
+
+
 .Something img {
-    height: 50vh;
+    height: 35vh;
     display: block;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px solid #857484;
+}
+
+.SomethingText {
+    font-family: MyFont;
+    font-size: 25px;
+    color: rgb(220, 211, 211);
 }
 
 .Something img:hover {
@@ -387,29 +447,34 @@ p {
 }
 
 
-.Patmen  {
-    display:none;
-    width: 64vw;
-    height: 50vh;
-    margin: 10px auto 1vh auto;
-    background-color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color:#000000;
-    background-color: rgba(219, 215, 215, 0.37);
-    gap: 20px;
-    flex-wrap:unset;
-}
-
 .PatmenBox {
     display:none;
-    margin: 15vh auto auto auto;
-
 }
 
+.Patmen {
+    width: 93%;
+    display: flex;
+    padding-top: 10px;
+    align-items: top;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(49, 33, 64);
+    justify-content: center;
+}
+
+
+
 .Patmen img {
-    height: 50vh;
+    height: 35vh;
     display: block;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px solid #857484;
+}
+
+.PatmenText {
+    font-family: MyFont;
+    font-size: 25px;
+    color: rgb(220, 211, 211);
 }
 
 .Patmen img:hover {
@@ -418,29 +483,34 @@ p {
 }
 
 
-.Davai  {
-    display:none;
-    width: 67vw;
-    height: 50vh;
-    margin: 10px auto 1vh auto;
-    background-color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.835rem;
-    color:#000000;
-    background-color: rgba(219, 215, 215, 0.37);
-    gap: 20px;
-    flex-wrap:unset;
-}
-
 .DavaiBox {
     display:none;
-    margin: 15vh auto auto auto;
-
 }
 
+.Davai {
+    width: 93%;
+    display: flex;
+    padding-top: 10px;
+    align-items: top;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(49, 33, 64);
+    justify-content: center;
+}
+
+
+
 .Davai img {
-    height: 50vh;
+    height: 35vh;
     display: block;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px solid #857484;
+}
+
+.DavaiText {
+    font-family: MyFont;
+    font-size: 25px;
+    color: rgb(220, 211, 211);
 }
 
 .Davai img:hover {
@@ -452,7 +522,8 @@ p {
 .ThankYouText {
     display: none;
     padding-top: 5vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: MyFont;
+    color:white;
     text-align: center;
     font-size: 1.5rem;
     width: 80%;
@@ -461,53 +532,51 @@ p {
 }
 
 
-.RetakeRosters {
 
-    margin-bottom: 5vh;
+
+.RetakeRosters  {
     text-align: center;
     display: none;
-    gap: 30px;
-    justify-content: center;
-
 }
 
 .RetakeRosters a {
+    margin: auto;
     color: white;
-    background-color: #2f052b;
-    width: 100px;
+    background-color: #511d6d;
+    width: 300px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
     text-align: center;
-
 }
 
 .RetakeRosters a:hover {
-    transform: scale(1.15);
-    color: red;
+    transform: scale(1.01);
+    color: rgb(181, 3, 181); 
     transition-duration: 0.5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
 }
 
 /* Footer */
 
 
 footer {
-    background-color: #2f052b;
+    border-top: 1px solid rgb(48, 48, 48);
     color: white;
     font-family: MyFont;
+    display: flex;
+
 }
-
-
-
 
 .footerBody {
     width: 100%;
     font-size: 12px;
     display: flex;
     align-items: center;
-    background-color: #2f052b;
-    height: 60px;
+    background-color: #150a24;
+    height: 100px;
 
 }
 

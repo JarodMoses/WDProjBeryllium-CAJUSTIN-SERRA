@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content = "The Rexes">
+            <meta name="keywords" content="PRX">
+            <meta name="author" content="BJ Serra">
+            <title> The Rexes </title>
+            <link rel="icon" type="image/png" href="../assets/PRX LOGO.png">
+            <link rel=stylesheet href=../css/Create.css>
+
+
+    
+        </head>
+            <body>
+
+                    <!-- NAVBAR -->
+                        <div class="navbar">
+                            <div class="navbar-container">
+                            
+                            <img src="../assets/Paper Rex IMG.png" alt="Logo" class="navlogo" style="width:150px;">
+                            
+                                
+                            <div class="navlinks">
+                                <li><a href="home.html" style=> Home </a></li>    
+                                
+                                <li class="players">
+                                    <a href="Roster.html"> Players </a>
+                                        <div class="players-dropdown">
+                                        </div>
+                                
+                                </li>
+
+                                
+                                <li><a href="Quiz.html"> Quiz </a></li>
+                                <li><a href="Accounts.html"> Accounts </a></li>
+                                <li><a href="Create.html"  style="color: rgb(140, 0, 255); 
+                                        text-shadow:
+                                        0 0 5px rgba(185, 146, 181, 0.4),
+                                        0 0 15px rgba(138, 43, 226, 0.4);" > Create </a></li>  
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- SIGNUP FORM BODY -->
+                    <div class="CreateBody">
+                        <div class="CreateContent">
+                            
+                        <!--The purpose of the signup form is to create accounts for contacting other players in the game, not to login-->
+                        <form id="signupForm"> 
+                            <div class="CreateAccount">
+                                <h1> Create Your Account </h1>
+                            </div>
+
+                                
+
+                                    Username: <br>
+                                    <input type="text" id="username" required><br><br>
+
+                                    Email Address: <br>
+                                    <input type="email" id="email" required><br><br>
+
+
+                                    Main Role:
+                                    <select id="role" required>
+                                    <option value="">Choose</option>
+                                    <option>Controller</option>
+                                    <option>Sentinel</option>
+                                    <option>Duelist</option>
+                                    <option>Initiator</option>
+                                    </select> <br><br>
+
+                                    Region: <br>
+                                    <select id="region" required>
+                                    <option value="">Choose</option>
+                                    <option>North America</option>
+                                    <option>Europe</option>
+                                    <option>Korea</option>
+                                    <option>Brazil</option>
+                                    <option>Latin America</option>
+                                    <option>Asia-Pacific</option>
+                                    </select> <br><br>
+
+
+
+                                    Rank: <br>
+                                    <select id="rank" required>
+                                    <option value="">Choose</option>
+                                    <option>Unranked</option>
+                                    <option>Iron</option>
+                                    <option>Bronze</option>
+                                    <option>Silver</option>
+                                    <option>Gold</option>
+                                    <option>Platinum</option>
+                                    <option>Diamond</option>
+                                    <option>Ascendant</option>
+                                    <option>Immortal</option>
+                                    <option>Radiant</option>
+                                    </select>
+
+
+                                    <br> <br>
+                                    Favorite PRX player:
+                                    <div class="player">
+                                        <img src="../assets/DAVAI.png" alt="Davai" onclick="selectPlayer('Davai', this)">
+                                        <img src="../assets/FORSAKEN.png" alt="Forsaken" onclick="selectPlayer('Forsaken', this)">
+                                        <img src="../assets/SOMETHING.png" alt="Something" onclick="selectPlayer('Something', this)">
+                                        <img src="../assets/PATMEN.png" alt="Patmen" onclick="selectPlayer('Patmen', this)">
+                                        <img src="../assets/JING.png" alt="XYZ" onclick="selectPlayer('Jing', this)">
+                                    </div>
+
+                                    <input type="hidden" id="playerinput" required>
+                                    <p id="chosenplayer" class="chosenplayer"></p>
+
+                                    <div class="Buttons">
+                                        <button type="submit">CREATE</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+            <script src="../Create.js" ></script>
+
+            </body>
+
+        
+        <!-- FOOTER -->
+        <footer>
+            <div class="footerBody">
+                
+                <div class="copyright">
+                    © 2026 Serra & Cajustin | All Rights Reserved
+                </div>
+
+                <div class="sources">
+                    <a href="Sources.html"> Sources </a>
+                </div>
+                    
+                <div class="contactinfo">
+                    b2029bjvserra@pshs.edu.ph <Br>
+                    b2029jmacajustin@pshs.edu.ph
+                </div>
+            </div>
+             
+
+    </footer>
+            
+    </html>

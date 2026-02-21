@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content = "The Rexes">
+            <meta name="keywords" content="PRX">
+            <meta name="author" content="BJ Serra">
+            <title> The Rexes </title>
+            <link rel="icon" type="image/png" href="../assets/PRX LOGO.png">
+            <link rel=stylesheet href=../css/Accounts.css>
+            <script src="../Accounts.js" defer></script>
+    
+        </head>
+            <body>
+
+                    
+                <!-- NAVBAR -->
+                    <div class="navbar">
+                            <div class="navbar-container">
+                            
+                            <img src="../assets/Paper Rex IMG.png" alt="Logo" class="navlogo" style="width:150px;">
+
+                            <div class="navlinks">
+                                <li><a href="home.html" style=> Home </a></li>    
+                                
+                                <li class="players">
+                                    <a href="Roster.html" > Players </a>
+                                </li>
+
+                                <li><a href="Quiz.html"> Quiz </a></li>
+                                <li><a href="Accounts.html"  style="color: rgb(140, 0, 255); 
+                                        text-shadow:
+                                        0 0 5px rgba(185, 146, 181, 0.4),    
+                                        0 0 15px rgba(138, 43, 226, 0.4);"> Accounts </a></li>
+                                <li><a href="Create.html"> Create </a></li>  
+                            </div>
+
+                                                         
+
+                        </div>
+                    </div>
+
+
+                <!-- BROWSE ACCOUNTS BODY -->
+                    <div class="AccountsBody">
+                        <div class="AccountsContent">
+                            <div class="BrowseAccs">
+                                <h1> Browse Accounts </h1>
+                            </div>
+
+                            <div class="Filters">
+                                
+                                Filter by Main Role: <br>
+                                <select id="filterRole">
+                                    <option value="All">All</option>
+                                    <option>Controller</option>
+                                    <option>Duelist</option>
+                                    <option>Sentinel</option>
+                                    <option>Initiator</option>
+                                </select> <br>
+
+                                    Filter by Region: <br>
+                                    <select id="filterRegion">
+                                    <option value="All">All</option>
+                                    <option>North America</option>
+                                    <option>Europe</option>
+                                    <option>Korea</option>
+                                    <option>Brazil</option>
+                                    <option>Latin America</option>
+                                    <option>Asia-Pacific</option>
+                                </select> <br>
+
+                                Filter by Rank: <br>
+                                <select id="filterRank">
+                                    <option value="All">All</option>
+                                    <option>Iron</option>
+                                    <option>Bronze</option>
+                                    <option>Silver</option>
+                                    <option>Gold</option>
+                                    <option>Platinum</option>
+                                    <option>Diamond</option>
+                                    <option>Ascendant</option>
+                                    <option>Immortal</option>
+                                    <option>Radiant</option>
+                                </select> <br>
+
+
+                            </div>
+
+
+                            <div id="total">
+                                Total Accounts Found: 
+                            </div>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Rex</th>
+                                    <th>Username</th>
+                                    <th>Role</th>
+                                    <th>Region</th>
+                                    <th>Rank</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tableBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+            </body>
+                   
+        <!-- FOOTER -->
+        <footer>
+            <div class="footerBody">
+                
+                <div class="copyright">
+                    © 2026 Serra & Cajustin | All Rights Reserved
+                </div>
+
+                <div class="sources">
+                    <a href="Sources.html"> Sources </a>
+                </div>
+                    
+                <div class="contactinfo">
+                    b2029bjvserra@pshs.edu.ph <Br>
+                    b2029jmacajustin@pshs.edu.ph
+                </div>
+            </div>
+             
+
+    </footer>
+            
+    </html>

@@ -1,56 +1,70 @@
-/* NAVBAR STUFF */
-
 body {
     margin: 0;
+    background-color: #1E1030;
+
 }
 
 
+/* Navbar styling */
 .navbar {
-    font-size: 15px;
-    gap: 11.63vw;
-    display: flex;
     list-style-type: none;
-    padding-inline: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;   
+    border-bottom: 1px solid rgb(49, 33, 64);
+
+ }
+
+.navbar-container{
+    display: flex;
     align-items: center;
-    background-color: #2f052b;
-    padding-bottom: 5px;
-    padding-top: 5px; 
+    padding: 32px;
+    padding-left: 9%;
+    padding-right: 10%;  
+    height: 40px;   
+    margin: 0 auto;
+    background: rgba(30, 16, 48, 0.92); 
+    backdrop-filter: blur(6px);   
 }
 
-.navbar li {
+
+.navlinks {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-left: auto;  
+    padding: 0;
+}
+
+.navbar-container li {
     position: relative;
 }
-
-
 
 a:link {
    text-decoration: none;
     color: white;
-    font-family: MyFont;
-    font-size: 15px;
+    font-family: myFont;
+    font-size: 20px;
     display: inline-block;        
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* So dropdown links dont get targeted */
-
-.navbar > li > a:hover {
-    transform: scale(1.2); 
-    color: red; 
+.navlinks > li > a:hover {
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
     transition-duration: .5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
 }
-
-
 
 @font-face {
     font-family: MyFont;
-    src: url(Valorant\ Font.ttf);
+    src: url(Oswald-VariableFont_wght.ttf);
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; 
   }
-
-
 
 a {
     text-decoration: none;
@@ -59,192 +73,150 @@ a {
 
 }
 
-
-
-.prxpic {
-    width: 100%;
-    display: block;
-    margin: auto;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 100%);
-}
-
-
-
-h1 {
-    font-family: myFont;
-    color: #67055d;
-    text-align: center;
-    padding: 0;
-    
-}
-
-.homeintro p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    margin: auto;
-    margin-top: 15px;
-    padding-bottom: 30px;
-    width: 80%;
-}
-
-
-
-.matches-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 50%;         
-    transform: translateX(-50%); 
-    background-color: #2f052b;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    padding-top: 10px;
-
-}
-
-.matches-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    font-family: MyFont;
-    text-align: center;
-
-}
-
-.matches-dropdown a:hover {
-    color: red;
-    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
-}
-
-.matches:hover .matches-dropdown {
-    display: block; 
-    
-}
-
-.matches:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
-
-}
-
-
-.players-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 50%;         
-    transform: translateX(-50%); 
-    background-color: #2f052b;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    padding-top: 10px;
-
-}
-
-.players-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    font-family: MyFont;
-    text-align: center;
-
-}
-
-.players-dropdown a:hover {
-    color: red;
-    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
-}
-
-.players:hover .players-dropdown {
-    display: block; 
-    
-}
-
 .players:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
+    transition-duration: .5s;
 
 }
 
+/*BANNER*/
+.Banner {
+    position: relative;
+    padding-top: 130px;
+}
+
+.BANNERTITLE {
+    color: white;
+    margin-top: -210px;
+    z-index: 3;
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.BANNERTITLE h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: myFont;
+}
+
+#PRXBANNER {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: brightness(60%);
+}
+
+/*ROSTER BODY*/
+.RosterBody {
+    position: relative;
+    z-index: 3;
+    padding-top: 0;
+    margin-top: 0px;
+    width: 80%;
+    margin: auto auto 49px auto;
+    background-color: #271341;
+    border-top: 2px solid rgb(184, 3, 244);
+    padding-bottom: 40px;
+}
+
+
+.RosterBody h1 {
+    font-family: MyFont;
+    text-align: left;
+    font-size: 40px;
+    padding-left: 30px;
+    margin-bottom: -15px;
+    color: #b992b5;    
+}
+
+.RosterTexts  p {
+    font-size: 20px;
+    font-family: MyFont;
+    padding-left: 30px;
+    color:white;
+
+}
+
+.RosterTexts {
+    width: 98%;
+    margin: auto;
+}
 
 /* Images of Players */
 
 .PlayerPictures {
-    
-    display: flex;
-    justify-content: center;
-    padding-left: 4px;
-    gap: 200px;                 
-    flex-wrap: wrap; 
-    margin-bottom: 50px;
-}
-
-.PlayerPictures2 {
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-    padding-left: 4px;
-}
-
-.Player-Pictures {
-    border: solid #555;
-    border-radius: 10px;
-}
-
-.Player-Pictures:hover {
-   transform: scale(1.2); 
-   transition-duration: .5s; 
-}
-
-/* Text at the bottom & quiz button */
-
-.PlayerIntro {
-    padding-top: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    width: 80%;
+    padding-top: 15px;
+    width: 90%;
     margin: auto;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 19px;                 
+    flex-wrap: wrap; 
+    text-align: center;
+    padding-bottom: 20px;
 
+}
+
+
+
+
+
+.PlayerPictures a {
+    
+    background-color: #2b1439;
+    border-radius: 15px;
+    border: 2px solid #471b5f;
+    overflow: hidden;
+    transition: transform .2 ease, box-shadow .2 ease;
+    display: block;
     
 }
 
-.PlayerIntro a {
-    color: white;
-    background-color: #2f052b;
-    width: 100px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
+.PlayerPictures a:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(152, 16, 197, 0.773)
+}
+
+.imagewrap {
+    height: 180px;
 
 }
 
+.PlayerInfo p {
+    margin-top: -15px;
+}
 
-.PlayerIntro a:hover {
-    transform: scale(1.15);
-    color: red;
-    transition-duration: 0.5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6); 
+.PlayerInfo h3 {
+    color: #b992b5;
+}
+.Player-Pictures {
+    background-color: #45165e;
+    
 }
 
 
+
+/*FOOTER*/
 footer {
-    background-color: #2f052b;  
+    border-top: 1px solid rgb(48, 48, 48);
     color: white;
     font-family: MyFont;
-}
+    display: flex;
 
+}
 
 .footerBody {
     width: 100%;
     font-size: 12px;
     display: flex;
     align-items: center;
-    background-color: #2f052b;
-    height: 60px;
+    background-color: #150a24;
+    height: 100px;
 
 }
 

@@ -1,260 +1,233 @@
-/* NAVBAR STUFF */
-
 body {
     margin: 0;
+    background-color: #1E1030;
+
 }
 
 
+/* Navbar styling */
 .navbar {
-    font-size: 15px;
-    gap: 11.63vw;
-    display: flex;
     list-style-type: none;
-    padding-inline: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;   
+    border-bottom: 1px solid rgb(49, 33, 64);
+
+ }
+
+.navbar-container{
+    display: flex;
     align-items: center;
-    background-color: #2f052b;
-    padding-bottom: 5px;
-    padding-top: 5px; 
-    margin-bottom: 4%;
+    padding: 32px;
+    padding-left: 9%;
+    padding-right: 10%;  
+    height: 40px;   
+    margin: 0 auto;
+    background: rgba(30, 16, 48, 0.92); 
+    backdrop-filter: blur(6px);   
 }
 
-.navbar li {
+
+.navlinks {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-left: auto;  
+    padding: 0;
+}
+
+.navbar-container li {
     position: relative;
 }
-
-
 
 a:link {
    text-decoration: none;
     color: white;
-    font-family: MyFont;
-    font-size: 15px;
+    font-family: myFont;
+    font-size: 20px;
     display: inline-block;        
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* So dropdown links dont get targeted */
-
-.navbar > li > a:hover {
-    transform: scale(1.2); 
-    color: red; 
-    transition-duration: .5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
+a:visited {
+    color: white;
 }
 
+.navlinks > li > a:hover {
 
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
+    transition-duration: .5s;
+}
 
 @font-face {
     font-family: MyFont;
-    src: url(Valorant\ Font.ttf);
+    src: url(Oswald-VariableFont_wght.ttf);
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; 
   }
 
+/*BANNER*/
+.Banner {
+    position: relative;
+    padding-top: 130px;
+}
 
-
-a {
-    text-decoration: none;
+.BANNERTITLE {
     color: white;
-    font-family: MyFont;
-
+    margin-top: -216px;
+    z-index: 3;
+    position: relative;
+    margin-bottom: 130px;
 }
 
-
-
-
-
-
-
-
-
-
-
-.matches-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 50%;         
-    transform: translateX(-50%); 
-    background-color: #2f052b;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    padding-top: 10px;
-
-}
-
-.matches-dropdown a {
-    display: block;
-    padding: 10px 20px;
+.BANNERTITLE h1 {
+    text-align: center;
     color: white;
-    font-family: MyFont;
-    text-align: center;
-
+    font-size: 50px;
+    font-family: myFont;
 }
 
-.matches-dropdown a:hover {
-    color: red;
-    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
-}
-
-.matches:hover .matches-dropdown {
-    display: block; 
-    
-}
-
-.matches:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
-
-}
-
-
-.players-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 50%;         
-    transform: translateX(-50%); 
-    background-color: #2f052b;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    padding-top: 10px;
-
-}
-
-.players-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    font-family: MyFont;
-    text-align: center;
-
-}
-
-.players-dropdown a:hover {
-    color: red;
-    text-shadow: 0 0 8px rgba(5, 5, 5, 0.6)
-}
-
-.players:hover .players-dropdown {
-    display: block; 
-    
-}
-
-.players:hover > a {
-    color: red;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6)
-
-}
-
-
-/* End of Navbar Styling */
-
-
-/* For the quiz & info */
-
-
-.PlayerIntro {
-    padding-top: 30px;
-    font-family: cursive;
-    font-size: 20px;
-    text-align: center;
+#PRXBANNER {
     width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: brightness(60%);
+}
+
+/*SOMETHING BODY*/
+.SomethingBody {
+    position: relative;
+    width: 80%;
+    margin: auto auto 49px auto;
+    background-color: #271341;
+    border-top: 2px solid rgb(184, 3, 244);;
+    border-bottom: 2px solid rgb(49, 33, 64);
+    
+}
+
+.SomethingBody > p {
+
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    color: rgb(207, 193, 209);
+    text-align: center;
+}
+
+.SomethingBody > a {
+    display: block;
+    background-color: #1E1030;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
     margin: auto;
-    margin-bottom: 20px;
-    
-    
+    margin-bottom: 30px;
 }
 
-.PlayerIntro a {
-    color: white;
-    background-color: #2f052b;
-    width: 100px;
-    padding-top: 10px;
-    margin-right: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-
+.SomethingBody > a:hover {
+    transform: scale(1.1); 
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
+    transition-duration: .5s;
 }
 
 
-
-.PlayerIntro a:hover {
-    transform: scale(1.15);
-    color: red;
-    transition-duration: 0.5s;
-    text-shadow: 0 0 8px rgba(255, 70, 85, 0.6);
-    
-}
-
-
-/*  Something Stuff */
-
-.SomethingBox {
+.Back {
     display: flex;
-    width: 55vw;
-    margin-left: 10%;
-    height: 50vh;
+    justify-content: flex-end;
+}
+
+.Back a {
+    display: inline-block;
+    color: white;
+    padding-right: 10px;
+}
+
+.Back a:hover {
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
+    transition-duration: .5s;
+}
+
+
+
+.SomethingContent {
+    width: 93%;
+    display: flex;
+    padding-top: 10px;
     margin: auto;
-    background-color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color:#5b0452;
-    background-color: rgba(219, 215, 215, 0.37);
-    gap: 10px;
-    font-weight: bold;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(49, 33, 64);
+}
 
+.SomethingContent > img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #857484;
+    margin-right: 20px;
+}
+
+
+.SomethingTexts img {
     
-}
-
-
-
-p {
-    margin: 0;
-}
-
-.SomethingText {
-    font-size: .8em;
-    color: black;
-    font-weight: normal;
-}
-
-/* Socials Icons */
-
-.SomethingBox a img {
     display: inline-block;
     width: 2vw;
-    padding-top: .7vw;
     vertical-align: middle;
 }
 
-.SomethingBox a img:hover {
+.SomethingTexts img:hover {
     transform: scale(1.1);
     transition-duration: .2s;
 }
 
-
-.caption1 {
-    width: 55vw;    
-    margin: auto;
+.SomethingBody h1 {
+    margin-top: 0;
+    font-family: MyFont;
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: -20px;
+    color: #b992b5;    
 }
 
+.SomethingTexts >  p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: MyFont;
+    color:white;
+}
 
+p {
+    font-family: MyFont;
+    color: white;
+    font-size: 20px;
+}
 
+/*FOOTER*/
 footer {
-    background-color: #2f052b;
+    border-top: 1px solid rgb(48, 48, 48);
     color: white;
     font-family: MyFont;
-}
+    display: flex;
 
+}
 
 .footerBody {
     width: 100%;
     font-size: 12px;
     display: flex;
     align-items: center;
-    background-color: #2f052b;
-    height: 60px;
+    background-color: #150a24;
+    height: 100px;
 
 }
 
