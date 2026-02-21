@@ -49,77 +49,74 @@
                         <div class="CreateContent">
                             
                         <!--The purpose of the signup form is to create accounts for contacting other players in the game, not to login-->
-                        <form id="signupForm"> 
-                            <div class="CreateAccount">
+                            <form id="signupForm"> 
+                                <div class="CreateAccount">
                                 <h1> Create Your Account </h1>
-                            </div>
+                                </div>
+                                        Username: <br>
+                                        <input type="text" id="username" required><br><br>
 
-                                
-
-                                    Username: <br>
-                                    <input type="text" id="username" required><br><br>
-
-                                    Email Address: <br>
-                                    <input type="email" id="email" required><br><br>
+                                        Email Address: <br>
+                                        <input type="email" id="email" required><br><br>
 
 
-                                    Main Role:
-                                    <select id="role" required>
-                                    <option value="">Choose</option>
-                                    <option>Controller</option>
-                                    <option>Sentinel</option>
-                                    <option>Duelist</option>
-                                    <option>Initiator</option>
-                                    </select> <br><br>
+                                        Main Role:
+                                        <select id="role" required>
+                                        <option value="">Choose</option>
+                                        <option>Controller</option>
+                                        <option>Sentinel</option>
+                                        <option>Duelist</option>
+                                        <option>Initiator</option>
+                                        </select> <br><br>
 
-                                    Region: <br>
-                                    <select id="region" required>
-                                    <option value="">Choose</option>
-                                    <option>North America</option>
-                                    <option>Europe</option>
-                                    <option>Korea</option>
-                                    <option>Brazil</option>
-                                    <option>Latin America</option>
-                                    <option>Asia-Pacific</option>
-                                    </select> <br><br>
+                                        Region: <br>
+                                        <select id="region" required>
+                                        <option value="">Choose</option>
+                                        <option>North America</option>
+                                        <option>Europe</option>
+                                        <option>Korea</option>
+                                        <option>Brazil</option>
+                                        <option>Latin America</option>
+                                        <option>Asia-Pacific</option>
+                                        </select> <br><br>
 
 
 
-                                    Rank: <br>
-                                    <select id="rank" required>
-                                    <option value="">Choose</option>
-                                    <option>Unranked</option>
-                                    <option>Iron</option>
-                                    <option>Bronze</option>
-                                    <option>Silver</option>
-                                    <option>Gold</option>
-                                    <option>Platinum</option>
-                                    <option>Diamond</option>
-                                    <option>Ascendant</option>
-                                    <option>Immortal</option>
-                                    <option>Radiant</option>
-                                    </select>
+                                        Rank: <br>
+                                        <select id="rank" required>
+                                        <option value="">Choose</option>
+                                        <option>Unranked</option>
+                                        <option>Iron</option>
+                                        <option>Bronze</option>
+                                        <option>Silver</option>
+                                        <option>Gold</option>
+                                        <option>Platinum</option>
+                                        <option>Diamond</option>
+                                        <option>Ascendant</option>
+                                        <option>Immortal</option>
+                                        <option>Radiant</option>
+                                        </select>
 
 
-                                    <br> <br>
-                                    Favorite PRX player:
-                                    <div class="player">
-                                        <img src="../assets/DAVAI.png" alt="Davai" onclick="selectPlayer('Davai', this)">
-                                        <img src="../assets/FORSAKEN.png" alt="Forsaken" onclick="selectPlayer('Forsaken', this)">
-                                        <img src="../assets/SOMETHING.png" alt="Something" onclick="selectPlayer('Something', this)">
-                                        <img src="../assets/PATMEN.png" alt="Patmen" onclick="selectPlayer('Patmen', this)">
-                                        <img src="../assets/JING.png" alt="XYZ" onclick="selectPlayer('Jing', this)">
-                                    </div>
+                                        <br> <br>
+                                        Favorite PRX player:
+                                        <div class="player">
+                                            <img src="../assets/DAVAI.png" alt="Davai" onclick="selectPlayer('Davai', this)">
+                                            <img src="../assets/FORSAKEN.png" alt="Forsaken" onclick="selectPlayer('Forsaken', this)">
+                                            <img src="../assets/SOMETHING.png" alt="Something" onclick="selectPlayer('Something', this)">
+                                            <img src="../assets/PATMEN.png" alt="Patmen" onclick="selectPlayer('Patmen', this)">
+                                            <img src="../assets/JING.png" alt="XYZ" onclick="selectPlayer('Jing', this)">
+                                        </div>
 
-                                    <input type="hidden" id="playerinput" required>
-                                    <p id="chosenplayer" class="chosenplayer"></p>
+                                        <input type="hidden" id="playerinput" required>
+                                        <p id="chosenplayer" class="chosenplayer"></p>
 
-                                    <div class="Buttons">
-                                        <button type="submit">CREATE</button>
-                                    </div>
-                            </form>
-                        </div>
+                                        <div class="Buttons">
+                                            <button type="submit">CREATE</button>
+                                        </div>
+                        </form>
                     </div>
+                </div>
             <script src="../Create.js" ></script>
 
             </body>
