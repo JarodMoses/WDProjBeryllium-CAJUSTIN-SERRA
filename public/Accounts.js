@@ -14,7 +14,7 @@ const total = document.getElementById("total");
     data.forEach(s => { // the display table
       tableBody.innerHTML += `
         <tr>
-            <td><img src="../assets/${s.prxplayer}.png" width="90"></td>
+            <td><img src="../assets/${s.prxplayer}img.png" width="90"></td>
             <td>${s.username}</td>
             <td>${s.role}</td>
             <td>${s.region}</td>
