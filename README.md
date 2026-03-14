@@ -89,6 +89,20 @@ You can view the wireframes to these webpages [here](CAJUSTIN&&SERRA_HTML_WIREFR
 A profile icon will be implemented into the website, where if not yet logged in, users will be sent to the login page when clicked.
 
 
+# Final Modification Proposal
+
+Our current system only implements the Create and Read operations. Users can create an account and the system stores their information using localStorage, which allows the website to display the saved data.
+
+To implement the Update and Delete operations, we will first improve the system by introducing a User Profile page rather than just an account creation and display. This page will allow users to view and change the information they entered during account creation.
+
+When a user logs in or accesses their account, they will be able to go to the Profile Page, where their account information from localStorage will be displayed. This page will also contain two main actions:
+
+Edit (Update):
+Upon clicking the Edit button, the user will be able to modify their stored information. After editing, the user can save the changes, which will update the stored data in localStorage.
+
+Delete
+Upon clicking the Delete button, the user can remove their account. This action will remove the stored data from localStorage. After deletion, the accounts list will no longer display the deleted account.
+
 
 
 
