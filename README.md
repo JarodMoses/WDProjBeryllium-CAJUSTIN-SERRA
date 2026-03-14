@@ -104,6 +104,9 @@ Delete
 Upon clicking the Delete button, the user can remove their account. This action will remove the stored data from localStorage. After deletion, the accounts list will no longer display the deleted account.
 
 
+See the wireframe to the website's CRUD operations [here](https://github.com/JarodMoses/WDProjBeryllium-CAJUSTIN-SERRA/blob/main/CRUD%20OPERATIONS%20IMPLEMTATION.pdf)
+
+
 
 
   
