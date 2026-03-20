@@ -103,6 +103,7 @@ Upon clicking the Edit button, the user will be able to modify their stored info
 Delete
 Upon clicking the Delete button, the user can remove their account. This action will remove the stored data from localStorage. After deletion, the accounts list will no longer display the deleted account.
 
+The purpose of these CRUD operations is to allow users to find accounts based on specific filters. Once found, these accounts can be contacted in-game using their usernames.
 
 See the wireframe to the website's CRUD operations [here](https://github.com/JarodMoses/WDProjBeryllium-CAJUSTIN-SERRA/blob/main/CRUD%20OPERATIONS%20IMPLEMTATION.pdf)
 
