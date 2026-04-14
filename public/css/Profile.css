@@ -82,9 +82,9 @@ a:visited {
   }
 
 
-/*Accounts body */
+/*Profile body */
 
-.AccountsBody {
+.ProfileBody {
     position: relative;
     width: 60%;
     margin: 150px auto 49px auto;
@@ -97,21 +97,21 @@ a:visited {
     
 }
 
-.AccountsBody  h1 {
+.ProfileBody  h1 {
     color: #b992b5;
     font-size: 40px;
     border-bottom: 2px solid rgb(49, 33, 64);
     margin-bottom: 0px;
 }
 
-.AccountsBody > p {
+.ProfileBody > p {
     padding-left: 3.5%;
     padding-right: 3.5%;
     color: rgb(207, 193, 209);
     text-align: center;
 }
 
-.AccountsContent {
+.ProfileContent {
 
     width: 93%;
     margin: auto;
@@ -121,7 +121,7 @@ a:visited {
 
 }
 
-.AccountsContent h2 {
+.ProfileContent h2 {
     font-size: 35px;
     margin-bottom: -2vh;
     margin-top: 0;

@@ -1,31 +1,32 @@
 document.addEventListener("DOMContentLoaded", function(){
     const user = JSON.parse(localStorage.getItem("matcheduser"));
-
+    //This part is to display their current information in the input boxes already
     document.getElementById("username").value = user.username;
     document.getElementById("email").value = user.email;
     document.getElementById("password").value = user.password;
-    document.getElementById("role").value = user.role;
+    document.getElementById("role").value = user.role;   
     document.getElementById("region").value = user.region;
     document.getElementById("rank").value = user.rank;
 
     const PlayerInput = document.getElementById("playerinput");
     const ChosenText = document.getElementById("chosenplayer");
-
+    //For the Player Chosen: text
     PlayerInput.value = user.prxplayer;
     ChosenText.textContent = "Selected Player: " + user.prxplayer;
-
+    //Adding selected to correct player
     document.querySelectorAll(".player img").forEach(img => {
         if (img.alt === user.prxplayer) {
             img.classList.add("selected");
         }
     });
 
+    //Main update form
     document.getElementById("updateForm").addEventListener("submit", function (e){
-        e.preventDefault();
-
+        e.preventDefault(); 
+        //Declarations
         let signups = JSON.parse(localStorage.getItem("signups")) || [];
         let user = JSON.parse(localStorage.getItem("matcheduser"));
-
+        //Cause you cant change email
         const email = user.email;
 
         const UsernameToCheck = document.getElementById("username").value.trim().toLowerCase(); // Converts username value to lowercase for checking purposes
@@ -40,16 +41,16 @@ document.addEventListener("DOMContentLoaded", function(){
 
         
         
-        if (document.getElementById("password").value !== user.password)
+        if (document.getElementById("password").value !== user.password) // if password is != old password
         {
 
-                if (document.getElementById("confirmpassword").value === "")
+                if (document.getElementById("confirmpassword").value === "") // if password is chagned, but not confirmed
                 {
                     alert("Please confirm your new password")
                     return;
                 }
 
-                if (document.getElementById("password").value !== document.getElementById("confirmpassword").value)
+                if (document.getElementById("password").value !== document.getElementById("confirmpassword").value) // if password is changed, but confirmation is wrong
                 {
                     alert("Your new passwords do not match.")
                     return;
@@ -59,14 +60,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-        const confirmed = confirm("Update your account?");
+        const confirmed = confirm("Update your account?"); 
         if (!confirmed) {
-            return;
+            return; //return if they cancel
         }
 
 
 
-        const updatedUser = {
+        const updatedUser = { //saving updated values
             username: document.getElementById("username").value,
             email: email, 
             password: document.getElementById("password").value,
@@ -115,6 +116,6 @@ function Cancel(){
         return;
     }
 
-
+    //goes back to profile if they pick the cancel button
     window.location.href = "Profile.html";
 }
