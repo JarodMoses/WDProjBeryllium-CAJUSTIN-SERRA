@@ -14,16 +14,16 @@ const RoleImages = { //object of images of roles
 };
 
 const RankImages = { // object of rank images
-    "Unranked": "../assets/unranked.png",
-    "Iron": "../assets/iron.png",
-    "Bronze": "../assets/bronze.png",
-    "Silver": "../assets/silver.png",
-    "Gold": "../assets/gold.png",
-    "Platinum": "../assets/platinum.png",
-    "Diamond": "../assets/diamond.png",
-    "Ascendant": "../assets/ascendant.png",
-    "Immortal": "../assets/immortal.png",
-    "Radiant": "../assets/radiant.png"
+    "Unranked": "../assets/Unranked.png",
+    "Iron": "../assets/Iron.png",
+    "Bronze": "../assets/Bronze.png",
+    "Silver": "../assets/Silver.png",
+    "Gold": "../assets/Gold.png",
+    "Platinum": "../assets/Platinum.png",
+    "Diamond": "../assets/Diamond.png",
+    "Ascendant": "../assets/Ascendant.png",
+    "Immortal": "../assets/Immortal.png",
+    "Radiant": "../assets/Radiant.png"
 };
 
 const RegionImages = { //object of images of regions
