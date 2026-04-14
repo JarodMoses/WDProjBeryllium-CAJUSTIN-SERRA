@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    background-color: #1E1030;
+
+}
+
+
+/* Navbar styling */
+.navbar {
+    list-style-type: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;   
+    border-bottom: 1px solid rgb(49, 33, 64);
+
+ }
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    padding-left: 9%;
+    padding-right: 10%;  
+    height: 40px;   
+    margin: 0 auto;
+    background: rgba(30, 16, 48, 0.92); 
+    backdrop-filter: blur(6px);   
+}
+
+
+.navlinks {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-left: auto;  
+    padding: 0;
+}
+
+.navbar-container li {
+    position: relative;
+}
+
+
+
+a:link {
+   text-decoration: none;
+    color: white;
+    font-family: myFont;
+    font-size: 20px;
+    display: inline-block;        
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:visited {
+    color: white;
+}
+
+
+.navlinks > li > a:hover {
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
+    transition-duration: .5s;
+}
+
+
+
+@font-face {
+    font-family: MyFont;
+    src: url(Oswald-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal; 
+  }
+
+/*CREATE BODY */
+
+.EditBody {
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    width: 30%;
+    margin: 150px    auto 50px auto;
+    background-color: #271341;
+    border-top: 2px solid rgb(184, 3, 244);
+    border-bottom: 2px solid rgb(184, 3, 244);
+    
+}
+
+
+
+.EditBody > a {
+    display: block;
+    background-color: #1E1030;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.EditBody > a:hover {
+    transform: scale(1.1); 
+    color: rgb(140, 0, 255); 
+    text-shadow:
+    0 0 5px rgba(185, 146, 181, 0.4),
+    0 0 15px rgba(138, 43, 226, 0.4);
+    transition-duration: .5s;
+}
+
+.EditContent {
+    width: 95%;
+    margin: auto;
+    font-family: MyFont;
+    color: white;
+}
+
+.EditAccount {
+    border-bottom: 1px solid rgb(48, 48, 48);
+    margin-bottom: 10px;
+}
+
+
+
+input {
+    margin-top: 7px;
+    width: 100%;
+    height: 40px;
+    background-color: #1E1030;
+    color:rgb(255, 255, 255);
+    border: 1.5px solid rgb(81, 25, 98);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+select {
+    margin-top: 7px;
+    width: 100%;
+    height: 40px;
+    background-color: #1E1030;
+    color:white;
+    border: 1.5px solid rgb(81, 25, 98);
+    padding-left: 10px;
+
+}
+
+select:focus {
+    outline: none;
+    border: 1.5px solid rgb(165, 31, 206);
+}
+
+
+input:focus {
+    outline: none;
+    border: 1.5px solid rgb(165, 31, 206);
+}
+
+
+.player img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 3px solid transparent;
+      border-radius: 14px;
+      transition: 0.2s;
+      background: rgba(0,0,0,0.15);
+      padding: 6px;
+      margin-bottom: 3px;
+}   
+.player img:hover { transform: scale(1.06); }
+
+
+.player img.selected {
+      border: 2px solid rgb(165, 31, 206);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    }
+
+.player {
+    gap: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7px;
+}
+
+.chosenplayer { opacity: 0.9; font-size: 0.95rem; }
+
+
+button {
+    width: 50%;
+    font-family: MyFont;
+    background-color: #c6b1b1;
+    border: none;
+    padding: 12px 48px;
+    border-radius: 1px;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(2px);
+    background-color: rgb(140, 0, 255); 
+    transition-duration: .4s;
+}
+
+.Buttons {
+    border-top: 1px solid rgb(48, 48, 48);
+    display: flex;
+    gap: 10%;
+    margin: auto;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+input[readonly] {
+    background-color: #3a2a50;
+    color: #dcd5d5;
+    cursor: not-allowed;
+}
+
+p {
+    font-family: MyFont;
+    color: rgb(237, 14, 249);
+    font-size: 20px;
+}
+
+h1 {
+    font-family: MyFont;
+    color:#b992b5;   
+
+}
+
+
+/*Footer Body */
+
+footer {
+    border-top: 1px solid rgb(48, 48, 48);
+    color: white;
+    font-family: MyFont;
+    display: flex;
+
+}
+
+.footerBody {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #150a24;
+    height: 100px;
+
+}
+
+.copyright {
+    width: 33%;
+    text-align: left;
+
+}
+
+.sources {
+    width: 33%;
+    text-align: center;
+}
+
+
+.contactinfo {
+    width: 33%;
+    text-align: right;
+    
+}
+
+.logintext {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.logintext a {
+    font-size: 18px;
+}

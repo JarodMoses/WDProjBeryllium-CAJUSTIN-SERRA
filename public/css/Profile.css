@@ -38,6 +38,12 @@ body {
     padding: 0;
 }
 
+
+
+
+
+
+
 .navbar-container li {
     position: relative;
 }
@@ -75,117 +81,76 @@ a:visited {
     font-style: normal; 
   }
 
-/*CREATE BODY */
 
-.CreateBody {
-    padding-right: 15px;
-    padding-left: 15px;
+/*Accounts body */
+
+.AccountsBody {
     position: relative;
-    width: 30%;
-    margin: 150px    auto 50px auto;
+    width: 60%;
+    margin: 150px auto 49px auto;
     background-color: #271341;
     border-top: 2px solid rgb(184, 3, 244);
     border-bottom: 2px solid rgb(184, 3, 244);
+    font-family: MyFont;
+    color: white;
+    text-align: center; 
     
 }
 
+.AccountsBody  h1 {
+    color: #b992b5;
+    font-size: 40px;
+    border-bottom: 2px solid rgb(49, 33, 64);
+    margin-bottom: 0px;
+}
 
-
-.CreateBody > a {
-    display: block;
-    background-color: #1E1030;
-    width: 80px;
+.AccountsBody > p {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    color: rgb(207, 193, 209);
     text-align: center;
-    border-radius: 5px;
+}
+
+.AccountsContent {
+
+    width: 93%;
     margin: auto;
-    margin-bottom: 30px;
-}
-
-.CreateBody > a:hover {
-    transform: scale(1.1); 
-    color: rgb(140, 0, 255); 
-    text-shadow:
-    0 0 5px rgba(185, 146, 181, 0.4),
-    0 0 15px rgba(138, 43, 226, 0.4);
-    transition-duration: .5s;
-}
-
-.CreateContent {
-    width: 95%;
-    margin: auto;
-    font-family: MyFont;
-    color: white;
-}
-
-.CreateAccount {
-    border-bottom: 1px solid rgb(48, 48, 48);
-    margin-bottom: 10px;
-}
+    padding-bottom: 40px;
 
 
-
-input {
-    margin-top: 7px;
-    width: 100%;
-    height: 40px;
-    background-color: #1E1030;
-    color:rgb(255, 255, 255);
-    border: 1.5px solid rgb(81, 25, 98);
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-select {
-    margin-top: 7px;
-    width: 100%;
-    height: 40px;
-    background-color: #1E1030;
-    color:white;
-    border: 1.5px solid rgb(81, 25, 98);
-    padding-left: 10px;
 
 }
 
-select:focus {
-    outline: none;
-    border: 1.5px solid rgb(165, 31, 206);
+.AccountsContent h2 {
+    font-size: 35px;
+    margin-bottom: -2vh;
+    margin-top: 0;
 }
 
 
-input:focus {
-    outline: none;
-    border: 1.5px solid rgb(165, 31, 206);
-}
-
-
-.player img {
-      width: 110px;
-      height: 110px;
-      object-fit: cover;
-      cursor: pointer;
-      border: 3px solid transparent;
-      border-radius: 14px;
-      transition: 0.2s;
-      background: rgba(0,0,0,0.15);
-      padding: 6px;
-      margin-bottom: 3px;
-}   
-.player img:hover { transform: scale(1.06); }
-
-
-.player img.selected {
-      border: 2px solid rgb(165, 31, 206);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-    }
-
-.player {
-    gap: 14px;
+.Wimages {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 7px;
+    justify-content: center;
+    
+    margin-top: 20px;
 }
 
-.chosenplayer { opacity: 0.9; font-size: 0.95rem; }
+.Wimages > div {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10vh;
+    height: 23vh;
+}
+
+
+
+.Wimages > div > img {
+    height: 100%;
+    margin-top: -2.25vh;
+}
+
 
 
 button {
@@ -205,24 +170,32 @@ button:hover {
 
 .Buttons {
     border-top: 1px solid rgb(48, 48, 48);
-    padding: 20px 0 20px 0;
+    padding: 20px 0 10px 0;
     text-align: center;
 }
 
+.LogAndDelete {
+    gap: 5vw;
+    display:flex;
+    justify-content: center;
+}
+
 p {
-    font-family: MyFont;
-    color: rgb(237, 14, 249);
-    font-size: 20px;
-}
-
-h1 {
-    font-family: MyFont;
-    color:#b992b5;   
-
+    width: 40%;
+    padding-bottom: .5vh;
+    margin: auto;
+    border-bottom: 1px solid rgb(148, 145, 145);
 }
 
 
-/*Footer Body */
+#total {
+    text-align: left;
+}
+
+
+
+
+/*FOOTER*/
 
 footer {
     border-top: 1px solid rgb(48, 48, 48);

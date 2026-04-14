@@ -4,6 +4,7 @@
     const role = document.getElementById("role");
     const region = document.getElementById("region");
     const rank = document.getElementById("rank");
+    const password = document.getElementById("password");
 
     function getSignups() {
       return JSON.parse(localStorage.getItem("signups")) || [];  // retrieve data
@@ -78,6 +79,7 @@
         region: region.value,
         rank: rank.value,
         prxplayer: player.value,  /*SAVING USER DATA FOR TABLE DISPLAY IN ACCOUNTS.HTML*/
+        password: password.value,
 
       };
 
@@ -90,8 +92,5 @@
       form.reset();
       resetPlayer()
 
-      window.scrollTo({  /*Scroll back to top after account creation */
-            top: 0,
-            behavior: "smooth"
-        });
+      window.location.href = "Login.html";
     });

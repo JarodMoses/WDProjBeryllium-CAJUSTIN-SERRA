@@ -8,7 +8,7 @@
             <meta name="author" content="BJ Serra">
             <title> The Rexes </title>
             <link rel="icon" type="image/png" href="../assets/PRX LOGO.png">
-            <link rel=stylesheet href=../css/Create&Login.css>
+            <link rel=stylesheet href=../css/Edit.css>
             <script src="../Global.js" defer></script>
 
 
@@ -44,23 +44,26 @@
                     </div>
 
                     
-                    <!-- SIGNUP FORM BODY -->
-                    <div class="CreateBody">
-                        <div class="CreateContent">
+                    <!-- UPDATE FORM BODY -->
+                    <div class="EditBody">
+                        <div class="EditContent">
                             
-                        <!--The purpose of the signup form is to create accounts for contacting other players in the game, not to login-->
-                            <form id="signupForm"> 
-                                <div class="CreateAccount">
-                                <h1> Create Your Account </h1>
+                        
+                            <form id="updateForm"> 
+                                <div class="EditAccount">
+                                <h1> Edit Your Account </h1>
                                 </div>
                                         Username: <br>
                                         <input type="text" id="username" required><br><br>
 
                                         Email Address: <br>
-                                        <input type="email" id="email" required><br><br>
+                                        <input type="email" id="email" readonly><br><br>
 
                                         Password: <br>
                                         <input type="password" id="password" required><br><br>
+
+                                        Confirm Password: 
+                                        <input type="password" id="confirmpassword" ><br><br>
 
 
                                         Main Role:
@@ -115,17 +118,13 @@
                                         <p id="chosenplayer" class="chosenplayer"></p>
 
                                         <div class="Buttons">
-                                            <button type="submit">CREATE</button>
+                                            <button type="submit">Update</button>
+                                            <button type="button" onclick="Cancel()">Cancel</button>
                                         </div>
-                                        <div class="logintext">
-                                            Already have an account? <a href="Login.html" style="color: rgb(140, 0, 255)">LOGIN</a>
-                                        </div>
-
-
                         </form>
                     </div>
                 </div>
-            <script src="../Create.js" ></script>
+            <script src="../Edit.js" ></script>
 
             </body>
 
