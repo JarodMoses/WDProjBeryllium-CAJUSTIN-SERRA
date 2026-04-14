@@ -75,9 +75,9 @@ a:visited {
     font-style: normal; 
   }
 
-/*CREATE BODY */
+/*EDIT BODY */
 
-.CreateBody {
+.EditBody {
     padding-right: 15px;
     padding-left: 15px;
     position: relative;
@@ -91,7 +91,7 @@ a:visited {
 
 
 
-.CreateBody > a {
+.EditBody > a {
     display: block;
     background-color: #1E1030;
     width: 80px;
@@ -101,7 +101,7 @@ a:visited {
     margin-bottom: 30px;
 }
 
-.CreateBody > a:hover {
+.EditBody > a:hover {
     transform: scale(1.1); 
     color: rgb(140, 0, 255); 
     text-shadow:
@@ -110,14 +110,14 @@ a:visited {
     transition-duration: .5s;
 }
 
-.CreateContent {
+.EditContent {
     width: 95%;
     margin: auto;
     font-family: MyFont;
     color: white;
 }
 
-.CreateAccount {
+.EditAccount {
     border-bottom: 1px solid rgb(48, 48, 48);
     margin-bottom: 10px;
 }
@@ -189,6 +189,7 @@ input:focus {
 
 
 button {
+    width: 50%;
     font-family: MyFont;
     background-color: #c6b1b1;
     border: none;
@@ -205,8 +206,17 @@ button:hover {
 
 .Buttons {
     border-top: 1px solid rgb(48, 48, 48);
-    padding: 20px 0 20px 0;
+    display: flex;
+    gap: 10%;
+    margin: auto;
+    padding: 20px 0 10px 0;
     text-align: center;
+}
+
+input[readonly] {
+    background-color: #3a2a50;
+    color: #dcd5d5;
+    cursor: not-allowed;
 }
 
 p {
@@ -258,4 +268,13 @@ footer {
     width: 33%;
     text-align: right;
     
+}
+
+.logintext {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.logintext a {
+    font-size: 18px;
 }
