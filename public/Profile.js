@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 const user = JSON.parse(localStorage.getItem("matcheduser"));
-
+    console.log("User:", user);
+    console.log("Rank:", user.rank);
+    
 // Displaying the user's username and email details
 document.getElementById("username").textContent = user.username;
 document.getElementById("email").textContent = user.email;
