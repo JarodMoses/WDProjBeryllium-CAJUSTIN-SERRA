@@ -32,17 +32,16 @@ body {
 
 .navlinks {
     display: flex;
-    gap: 50px;
+    gap: 35px;
     list-style: none;
     margin-left: auto;  
     padding: 0;
 }
 
 
-
-
-
-
+#AccountsList {
+    display: none;
+}
 
 .navbar-container li {
     position: relative;
